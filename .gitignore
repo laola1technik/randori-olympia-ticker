@@ -15,3 +15,6 @@ node_modules
 # Jetbrains
 .idea/
 *.iws
+
+# Assets
+#/public/assets/js/*

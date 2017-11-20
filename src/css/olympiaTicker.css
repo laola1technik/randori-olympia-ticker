@@ -1,0 +1,4888 @@
+/*! normalize.css v2.1.0 | MIT License | git.io/normalize */
+
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+
+/**
+ * Correct `block` display not defined in IE 8/9.
+ */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+    display: block;
+}
+
+/**
+ * Correct `inline-block` display not defined in IE 8/9.
+ */
+
+audio,
+canvas,
+video {
+    display: inline-block;
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+
+[hidden] {
+    display: none;
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+
+html {
+    font-family: sans-serif; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+    -ms-text-size-adjust: 100%; /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+
+body {
+    margin: 0;
+}
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+
+a:focus {
+    outline: thin dotted;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+
+a:active,
+a:hover {
+    outline: 0;
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari 5, and Chrome.
+ */
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+
+abbr[title] {
+    border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+
+b,
+strong {
+    font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari 5 and Chrome.
+ */
+
+dfn {
+    font-style: italic;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+
+hr {
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+
+mark {
+    background: #ff0;
+    color: #000;
+}
+
+/**
+ * Correct font family set oddly in Safari 5 and Chrome.
+ */
+
+code,
+kbd,
+pre,
+samp {
+    font-family: monospace, serif;
+    font-size: 1em;
+}
+
+/**
+ * Improve readability of pre-formatted text in all browsers.
+ */
+
+pre {
+    white-space: pre-wrap;
+}
+
+/**
+ * Set consistent quote types.
+ */
+
+q {
+    quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+
+small {
+    font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sup {
+    top: -0.5em;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+
+/**
+ * Remove border when inside `a` element in IE 8/9.
+ */
+
+img {
+    border: 0;
+}
+
+/**
+ * Correct overflow displayed oddly in IE 9.
+ */
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+
+/**
+ * Address margin not present in IE 8/9 and Safari 5.
+ */
+
+figure {
+    margin: 0;
+}
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+
+fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+
+legend {
+    border: 0; /* 1 */
+    padding: 0; /* 2 */
+}
+
+/**
+ * 1. Correct font family not being inherited in all browsers.
+ * 2. Correct font size not being inherited in all browsers.
+ * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
+ */
+
+button,
+input,
+select,
+textarea {
+    font-family: inherit; /* 1 */
+    font-size: 100%; /* 2 */
+    font-weight: inherit; /* 1 */
+    margin: 0; /* 3 */
+    padding: 0;
+}
+
+/**
+ * Remove the default button background color that browsers set
+ */
+
+button {
+    background: transparent;
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+
+button,
+input {
+    line-height: normal;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+
+button,
+select {
+    text-transform: none;
+}
+
+/**
+ * Make sure selects don't get the default browser styles.
+ */
+select {
+  -webkit-appearance: none;
+}
+
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+
+button,
+html input[type="button"], /* 1 */
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: button; /* 2 */
+    cursor: pointer; /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+
+button[disabled],
+html input[disabled] {
+    cursor: default;
+}
+
+/**
+ * 1. Address box sizing set to `content-box` in IE 8/9.
+ * 2. Remove excess padding in IE 8/9.
+ */
+
+input[type="checkbox"],
+input[type="radio"] {
+    box-sizing: border-box; /* 1 */
+    padding: 0; /* 2 */
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+
+input[type="search"] {
+    -webkit-appearance: textfield; /* 1 */
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box; /* 2 */
+    box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+/**
+ * 1. Remove default vertical scrollbar in IE 8/9.
+ * 2. Improve readability and alignment in all browsers.
+ * 3. Disable resizing by default.
+ */
+
+textarea {
+    overflow: auto; /* 1 */
+    vertical-align: top; /* 2 */
+    resize: none; /* 3 */
+}
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+
+/**
+ * Remove most spacing between table cells.
+ */
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+/* remember to define focus styles! */
+:focus {
+  outline: 0;
+}
+body {
+  line-height: 1;
+  color: black;
+  background: white;
+}
+ol, ul, li {
+  list-style: none;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+}
+blockquote, q {
+  quotes: "" "";
+}
+a,
+a:hover,
+a:visited {
+  text-decoration: none;
+}
+button,
+input {
+  font-size: inherit;
+  color: inherit;
+  border: none;
+}
+img {
+ /* width: 100%;
+  height: auto;*/
+}
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { *zoom: 1; }
+
+* {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}/*!
+ *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
+ *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+ */
+/* FONT PATH
+ * -------------------------- */
+@font-face {
+  font-family: 'FontAwesome';
+  src: url(.././fonts/674f50d287a8c48dc19ba404d20fe713.eot);
+  src: url(.././fonts/674f50d287a8c48dc19ba404d20fe713.eot?#iefix&v=4.7.0) format('embedded-opentype'), url(.././fonts/af7ae505a9eed503f8b8e6982036873e.woff2) format('woff2'), url(.././fonts/fee66e712a8a08eef5805a46892932ad.woff) format('woff'), url(.././fonts/b06871f281fee6b241d60582ae9369b9.ttf) format('truetype'), url(data:image/svg+xml;base64,bW9kdWxlLmV4cG9ydHMgPSAiLi4vLi9pbWcvOTEyZWM2NmQ3NTcyZmY4MjE3NDkzMTkzOTY0NzBiZGUuc3ZnIjs=#fontawesomeregular) format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* makes the font 33% larger relative to the icon container */
+.fa-lg {
+  font-size: 1.33333333em;
+  line-height: 0.75em;
+  vertical-align: -15%;
+}
+.fa-2x {
+  font-size: 2em;
+}
+.fa-3x {
+  font-size: 3em;
+}
+.fa-4x {
+  font-size: 4em;
+}
+.fa-5x {
+  font-size: 5em;
+}
+.fa-fw {
+  width: 1.28571429em;
+  text-align: center;
+}
+.fa-ul {
+  padding-left: 0;
+  margin-left: 2.14285714em;
+  list-style-type: none;
+}
+.fa-ul > li {
+  position: relative;
+}
+.fa-li {
+  position: absolute;
+  left: -2.14285714em;
+  width: 2.14285714em;
+  top: 0.14285714em;
+  text-align: center;
+}
+.fa-li.fa-lg {
+  left: -1.85714286em;
+}
+.fa-border {
+  padding: .2em .25em .15em;
+  border: solid 0.08em #eeeeee;
+  border-radius: .1em;
+}
+.fa-pull-left {
+  float: left;
+}
+.fa-pull-right {
+  float: right;
+}
+.fa.fa-pull-left {
+  margin-right: .3em;
+}
+.fa.fa-pull-right {
+  margin-left: .3em;
+}
+/* Deprecated as of 4.4.0 */
+.pull-right {
+  float: right;
+}
+.pull-left {
+  float: left;
+}
+.fa.pull-left {
+  margin-right: .3em;
+}
+.fa.pull-right {
+  margin-left: .3em;
+}
+.fa-spin {
+  -webkit-animation: fa-spin 2s infinite linear;
+  animation: fa-spin 2s infinite linear;
+}
+.fa-pulse {
+  -webkit-animation: fa-spin 1s infinite steps(8);
+  animation: fa-spin 1s infinite steps(8);
+}
+@-webkit-keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+.fa-rotate-90 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.fa-rotate-180 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.fa-rotate-270 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=3)";
+  -webkit-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+.fa-flip-horizontal {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)";
+  -webkit-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+  transform: scale(-1, 1);
+}
+.fa-flip-vertical {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
+  -webkit-transform: scale(1, -1);
+  -ms-transform: scale(1, -1);
+  transform: scale(1, -1);
+}
+:root .fa-rotate-90,
+:root .fa-rotate-180,
+:root .fa-rotate-270,
+:root .fa-flip-horizontal,
+:root .fa-flip-vertical {
+  filter: none;
+}
+.fa-stack {
+  position: relative;
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
+  vertical-align: middle;
+}
+.fa-stack-1x,
+.fa-stack-2x {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+.fa-stack-1x {
+  line-height: inherit;
+}
+.fa-stack-2x {
+  font-size: 2em;
+}
+.fa-inverse {
+  color: #ffffff;
+}
+/* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
+   readers do not read off random characters that represent icons */
+.fa-glass:before {
+  content: "\F000";
+}
+.fa-music:before {
+  content: "\F001";
+}
+.fa-search:before {
+  content: "\F002";
+}
+.fa-envelope-o:before {
+  content: "\F003";
+}
+.fa-heart:before {
+  content: "\F004";
+}
+.fa-star:before {
+  content: "\F005";
+}
+.fa-star-o:before {
+  content: "\F006";
+}
+.fa-user:before {
+  content: "\F007";
+}
+.fa-film:before {
+  content: "\F008";
+}
+.fa-th-large:before {
+  content: "\F009";
+}
+.fa-th:before {
+  content: "\F00A";
+}
+.fa-th-list:before {
+  content: "\F00B";
+}
+.fa-check:before {
+  content: "\F00C";
+}
+.fa-remove:before,
+.fa-close:before,
+.fa-times:before {
+  content: "\F00D";
+}
+.fa-search-plus:before {
+  content: "\F00E";
+}
+.fa-search-minus:before {
+  content: "\F010";
+}
+.fa-power-off:before {
+  content: "\F011";
+}
+.fa-signal:before {
+  content: "\F012";
+}
+.fa-gear:before,
+.fa-cog:before {
+  content: "\F013";
+}
+.fa-trash-o:before {
+  content: "\F014";
+}
+.fa-home:before {
+  content: "\F015";
+}
+.fa-file-o:before {
+  content: "\F016";
+}
+.fa-clock-o:before {
+  content: "\F017";
+}
+.fa-road:before {
+  content: "\F018";
+}
+.fa-download:before {
+  content: "\F019";
+}
+.fa-arrow-circle-o-down:before {
+  content: "\F01A";
+}
+.fa-arrow-circle-o-up:before {
+  content: "\F01B";
+}
+.fa-inbox:before {
+  content: "\F01C";
+}
+.fa-play-circle-o:before {
+  content: "\F01D";
+}
+.fa-rotate-right:before,
+.fa-repeat:before {
+  content: "\F01E";
+}
+.fa-refresh:before {
+  content: "\F021";
+}
+.fa-list-alt:before {
+  content: "\F022";
+}
+.fa-lock:before {
+  content: "\F023";
+}
+.fa-flag:before {
+  content: "\F024";
+}
+.fa-headphones:before {
+  content: "\F025";
+}
+.fa-volume-off:before {
+  content: "\F026";
+}
+.fa-volume-down:before {
+  content: "\F027";
+}
+.fa-volume-up:before {
+  content: "\F028";
+}
+.fa-qrcode:before {
+  content: "\F029";
+}
+.fa-barcode:before {
+  content: "\F02A";
+}
+.fa-tag:before {
+  content: "\F02B";
+}
+.fa-tags:before {
+  content: "\F02C";
+}
+.fa-book:before {
+  content: "\F02D";
+}
+.fa-bookmark:before {
+  content: "\F02E";
+}
+.fa-print:before {
+  content: "\F02F";
+}
+.fa-camera:before {
+  content: "\F030";
+}
+.fa-font:before {
+  content: "\F031";
+}
+.fa-bold:before {
+  content: "\F032";
+}
+.fa-italic:before {
+  content: "\F033";
+}
+.fa-text-height:before {
+  content: "\F034";
+}
+.fa-text-width:before {
+  content: "\F035";
+}
+.fa-align-left:before {
+  content: "\F036";
+}
+.fa-align-center:before {
+  content: "\F037";
+}
+.fa-align-right:before {
+  content: "\F038";
+}
+.fa-align-justify:before {
+  content: "\F039";
+}
+.fa-list:before {
+  content: "\F03A";
+}
+.fa-dedent:before,
+.fa-outdent:before {
+  content: "\F03B";
+}
+.fa-indent:before {
+  content: "\F03C";
+}
+.fa-video-camera:before {
+  content: "\F03D";
+}
+.fa-photo:before,
+.fa-image:before,
+.fa-picture-o:before {
+  content: "\F03E";
+}
+.fa-pencil:before {
+  content: "\F040";
+}
+.fa-map-marker:before {
+  content: "\F041";
+}
+.fa-adjust:before {
+  content: "\F042";
+}
+.fa-tint:before {
+  content: "\F043";
+}
+.fa-edit:before,
+.fa-pencil-square-o:before {
+  content: "\F044";
+}
+.fa-share-square-o:before {
+  content: "\F045";
+}
+.fa-check-square-o:before {
+  content: "\F046";
+}
+.fa-arrows:before {
+  content: "\F047";
+}
+.fa-step-backward:before {
+  content: "\F048";
+}
+.fa-fast-backward:before {
+  content: "\F049";
+}
+.fa-backward:before {
+  content: "\F04A";
+}
+.fa-play:before {
+  content: "\F04B";
+}
+.fa-pause:before {
+  content: "\F04C";
+}
+.fa-stop:before {
+  content: "\F04D";
+}
+.fa-forward:before {
+  content: "\F04E";
+}
+.fa-fast-forward:before {
+  content: "\F050";
+}
+.fa-step-forward:before {
+  content: "\F051";
+}
+.fa-eject:before {
+  content: "\F052";
+}
+.fa-chevron-left:before {
+  content: "\F053";
+}
+.fa-chevron-right:before {
+  content: "\F054";
+}
+.fa-plus-circle:before {
+  content: "\F055";
+}
+.fa-minus-circle:before {
+  content: "\F056";
+}
+.fa-times-circle:before {
+  content: "\F057";
+}
+.fa-check-circle:before {
+  content: "\F058";
+}
+.fa-question-circle:before {
+  content: "\F059";
+}
+.fa-info-circle:before {
+  content: "\F05A";
+}
+.fa-crosshairs:before {
+  content: "\F05B";
+}
+.fa-times-circle-o:before {
+  content: "\F05C";
+}
+.fa-check-circle-o:before {
+  content: "\F05D";
+}
+.fa-ban:before {
+  content: "\F05E";
+}
+.fa-arrow-left:before {
+  content: "\F060";
+}
+.fa-arrow-right:before {
+  content: "\F061";
+}
+.fa-arrow-up:before {
+  content: "\F062";
+}
+.fa-arrow-down:before {
+  content: "\F063";
+}
+.fa-mail-forward:before,
+.fa-share:before {
+  content: "\F064";
+}
+.fa-expand:before {
+  content: "\F065";
+}
+.fa-compress:before {
+  content: "\F066";
+}
+.fa-plus:before {
+  content: "\F067";
+}
+.fa-minus:before {
+  content: "\F068";
+}
+.fa-asterisk:before {
+  content: "\F069";
+}
+.fa-exclamation-circle:before {
+  content: "\F06A";
+}
+.fa-gift:before {
+  content: "\F06B";
+}
+.fa-leaf:before {
+  content: "\F06C";
+}
+.fa-fire:before {
+  content: "\F06D";
+}
+.fa-eye:before {
+  content: "\F06E";
+}
+.fa-eye-slash:before {
+  content: "\F070";
+}
+.fa-warning:before,
+.fa-exclamation-triangle:before {
+  content: "\F071";
+}
+.fa-plane:before {
+  content: "\F072";
+}
+.fa-calendar:before {
+  content: "\F073";
+}
+.fa-random:before {
+  content: "\F074";
+}
+.fa-comment:before {
+  content: "\F075";
+}
+.fa-magnet:before {
+  content: "\F076";
+}
+.fa-chevron-up:before {
+  content: "\F077";
+}
+.fa-chevron-down:before {
+  content: "\F078";
+}
+.fa-retweet:before {
+  content: "\F079";
+}
+.fa-shopping-cart:before {
+  content: "\F07A";
+}
+.fa-folder:before {
+  content: "\F07B";
+}
+.fa-folder-open:before {
+  content: "\F07C";
+}
+.fa-arrows-v:before {
+  content: "\F07D";
+}
+.fa-arrows-h:before {
+  content: "\F07E";
+}
+.fa-bar-chart-o:before,
+.fa-bar-chart:before {
+  content: "\F080";
+}
+.fa-twitter-square:before {
+  content: "\F081";
+}
+.fa-facebook-square:before {
+  content: "\F082";
+}
+.fa-camera-retro:before {
+  content: "\F083";
+}
+.fa-key:before {
+  content: "\F084";
+}
+.fa-gears:before,
+.fa-cogs:before {
+  content: "\F085";
+}
+.fa-comments:before {
+  content: "\F086";
+}
+.fa-thumbs-o-up:before {
+  content: "\F087";
+}
+.fa-thumbs-o-down:before {
+  content: "\F088";
+}
+.fa-star-half:before {
+  content: "\F089";
+}
+.fa-heart-o:before {
+  content: "\F08A";
+}
+.fa-sign-out:before {
+  content: "\F08B";
+}
+.fa-linkedin-square:before {
+  content: "\F08C";
+}
+.fa-thumb-tack:before {
+  content: "\F08D";
+}
+.fa-external-link:before {
+  content: "\F08E";
+}
+.fa-sign-in:before {
+  content: "\F090";
+}
+.fa-trophy:before {
+  content: "\F091";
+}
+.fa-github-square:before {
+  content: "\F092";
+}
+.fa-upload:before {
+  content: "\F093";
+}
+.fa-lemon-o:before {
+  content: "\F094";
+}
+.fa-phone:before {
+  content: "\F095";
+}
+.fa-square-o:before {
+  content: "\F096";
+}
+.fa-bookmark-o:before {
+  content: "\F097";
+}
+.fa-phone-square:before {
+  content: "\F098";
+}
+.fa-twitter:before {
+  content: "\F099";
+}
+.fa-facebook-f:before,
+.fa-facebook:before {
+  content: "\F09A";
+}
+.fa-github:before {
+  content: "\F09B";
+}
+.fa-unlock:before {
+  content: "\F09C";
+}
+.fa-credit-card:before {
+  content: "\F09D";
+}
+.fa-feed:before,
+.fa-rss:before {
+  content: "\F09E";
+}
+.fa-hdd-o:before {
+  content: "\F0A0";
+}
+.fa-bullhorn:before {
+  content: "\F0A1";
+}
+.fa-bell:before {
+  content: "\F0F3";
+}
+.fa-certificate:before {
+  content: "\F0A3";
+}
+.fa-hand-o-right:before {
+  content: "\F0A4";
+}
+.fa-hand-o-left:before {
+  content: "\F0A5";
+}
+.fa-hand-o-up:before {
+  content: "\F0A6";
+}
+.fa-hand-o-down:before {
+  content: "\F0A7";
+}
+.fa-arrow-circle-left:before {
+  content: "\F0A8";
+}
+.fa-arrow-circle-right:before {
+  content: "\F0A9";
+}
+.fa-arrow-circle-up:before {
+  content: "\F0AA";
+}
+.fa-arrow-circle-down:before {
+  content: "\F0AB";
+}
+.fa-globe:before {
+  content: "\F0AC";
+}
+.fa-wrench:before {
+  content: "\F0AD";
+}
+.fa-tasks:before {
+  content: "\F0AE";
+}
+.fa-filter:before {
+  content: "\F0B0";
+}
+.fa-briefcase:before {
+  content: "\F0B1";
+}
+.fa-arrows-alt:before {
+  content: "\F0B2";
+}
+.fa-group:before,
+.fa-users:before {
+  content: "\F0C0";
+}
+.fa-chain:before,
+.fa-link:before {
+  content: "\F0C1";
+}
+.fa-cloud:before {
+  content: "\F0C2";
+}
+.fa-flask:before {
+  content: "\F0C3";
+}
+.fa-cut:before,
+.fa-scissors:before {
+  content: "\F0C4";
+}
+.fa-copy:before,
+.fa-files-o:before {
+  content: "\F0C5";
+}
+.fa-paperclip:before {
+  content: "\F0C6";
+}
+.fa-save:before,
+.fa-floppy-o:before {
+  content: "\F0C7";
+}
+.fa-square:before {
+  content: "\F0C8";
+}
+.fa-navicon:before,
+.fa-reorder:before,
+.fa-bars:before {
+  content: "\F0C9";
+}
+.fa-list-ul:before {
+  content: "\F0CA";
+}
+.fa-list-ol:before {
+  content: "\F0CB";
+}
+.fa-strikethrough:before {
+  content: "\F0CC";
+}
+.fa-underline:before {
+  content: "\F0CD";
+}
+.fa-table:before {
+  content: "\F0CE";
+}
+.fa-magic:before {
+  content: "\F0D0";
+}
+.fa-truck:before {
+  content: "\F0D1";
+}
+.fa-pinterest:before {
+  content: "\F0D2";
+}
+.fa-pinterest-square:before {
+  content: "\F0D3";
+}
+.fa-google-plus-square:before {
+  content: "\F0D4";
+}
+.fa-google-plus:before {
+  content: "\F0D5";
+}
+.fa-money:before {
+  content: "\F0D6";
+}
+.fa-caret-down:before {
+  content: "\F0D7";
+}
+.fa-caret-up:before {
+  content: "\F0D8";
+}
+.fa-caret-left:before {
+  content: "\F0D9";
+}
+.fa-caret-right:before {
+  content: "\F0DA";
+}
+.fa-columns:before {
+  content: "\F0DB";
+}
+.fa-unsorted:before,
+.fa-sort:before {
+  content: "\F0DC";
+}
+.fa-sort-down:before,
+.fa-sort-desc:before {
+  content: "\F0DD";
+}
+.fa-sort-up:before,
+.fa-sort-asc:before {
+  content: "\F0DE";
+}
+.fa-envelope:before {
+  content: "\F0E0";
+}
+.fa-linkedin:before {
+  content: "\F0E1";
+}
+.fa-rotate-left:before,
+.fa-undo:before {
+  content: "\F0E2";
+}
+.fa-legal:before,
+.fa-gavel:before {
+  content: "\F0E3";
+}
+.fa-dashboard:before,
+.fa-tachometer:before {
+  content: "\F0E4";
+}
+.fa-comment-o:before {
+  content: "\F0E5";
+}
+.fa-comments-o:before {
+  content: "\F0E6";
+}
+.fa-flash:before,
+.fa-bolt:before {
+  content: "\F0E7";
+}
+.fa-sitemap:before {
+  content: "\F0E8";
+}
+.fa-umbrella:before {
+  content: "\F0E9";
+}
+.fa-paste:before,
+.fa-clipboard:before {
+  content: "\F0EA";
+}
+.fa-lightbulb-o:before {
+  content: "\F0EB";
+}
+.fa-exchange:before {
+  content: "\F0EC";
+}
+.fa-cloud-download:before {
+  content: "\F0ED";
+}
+.fa-cloud-upload:before {
+  content: "\F0EE";
+}
+.fa-user-md:before {
+  content: "\F0F0";
+}
+.fa-stethoscope:before {
+  content: "\F0F1";
+}
+.fa-suitcase:before {
+  content: "\F0F2";
+}
+.fa-bell-o:before {
+  content: "\F0A2";
+}
+.fa-coffee:before {
+  content: "\F0F4";
+}
+.fa-cutlery:before {
+  content: "\F0F5";
+}
+.fa-file-text-o:before {
+  content: "\F0F6";
+}
+.fa-building-o:before {
+  content: "\F0F7";
+}
+.fa-hospital-o:before {
+  content: "\F0F8";
+}
+.fa-ambulance:before {
+  content: "\F0F9";
+}
+.fa-medkit:before {
+  content: "\F0FA";
+}
+.fa-fighter-jet:before {
+  content: "\F0FB";
+}
+.fa-beer:before {
+  content: "\F0FC";
+}
+.fa-h-square:before {
+  content: "\F0FD";
+}
+.fa-plus-square:before {
+  content: "\F0FE";
+}
+.fa-angle-double-left:before {
+  content: "\F100";
+}
+.fa-angle-double-right:before {
+  content: "\F101";
+}
+.fa-angle-double-up:before {
+  content: "\F102";
+}
+.fa-angle-double-down:before {
+  content: "\F103";
+}
+.fa-angle-left:before {
+  content: "\F104";
+}
+.fa-angle-right:before {
+  content: "\F105";
+}
+.fa-angle-up:before {
+  content: "\F106";
+}
+.fa-angle-down:before {
+  content: "\F107";
+}
+.fa-desktop:before {
+  content: "\F108";
+}
+.fa-laptop:before {
+  content: "\F109";
+}
+.fa-tablet:before {
+  content: "\F10A";
+}
+.fa-mobile-phone:before,
+.fa-mobile:before {
+  content: "\F10B";
+}
+.fa-circle-o:before {
+  content: "\F10C";
+}
+.fa-quote-left:before {
+  content: "\F10D";
+}
+.fa-quote-right:before {
+  content: "\F10E";
+}
+.fa-spinner:before {
+  content: "\F110";
+}
+.fa-circle:before {
+  content: "\F111";
+}
+.fa-mail-reply:before,
+.fa-reply:before {
+  content: "\F112";
+}
+.fa-github-alt:before {
+  content: "\F113";
+}
+.fa-folder-o:before {
+  content: "\F114";
+}
+.fa-folder-open-o:before {
+  content: "\F115";
+}
+.fa-smile-o:before {
+  content: "\F118";
+}
+.fa-frown-o:before {
+  content: "\F119";
+}
+.fa-meh-o:before {
+  content: "\F11A";
+}
+.fa-gamepad:before {
+  content: "\F11B";
+}
+.fa-keyboard-o:before {
+  content: "\F11C";
+}
+.fa-flag-o:before {
+  content: "\F11D";
+}
+.fa-flag-checkered:before {
+  content: "\F11E";
+}
+.fa-terminal:before {
+  content: "\F120";
+}
+.fa-code:before {
+  content: "\F121";
+}
+.fa-mail-reply-all:before,
+.fa-reply-all:before {
+  content: "\F122";
+}
+.fa-star-half-empty:before,
+.fa-star-half-full:before,
+.fa-star-half-o:before {
+  content: "\F123";
+}
+.fa-location-arrow:before {
+  content: "\F124";
+}
+.fa-crop:before {
+  content: "\F125";
+}
+.fa-code-fork:before {
+  content: "\F126";
+}
+.fa-unlink:before,
+.fa-chain-broken:before {
+  content: "\F127";
+}
+.fa-question:before {
+  content: "\F128";
+}
+.fa-info:before {
+  content: "\F129";
+}
+.fa-exclamation:before {
+  content: "\F12A";
+}
+.fa-superscript:before {
+  content: "\F12B";
+}
+.fa-subscript:before {
+  content: "\F12C";
+}
+.fa-eraser:before {
+  content: "\F12D";
+}
+.fa-puzzle-piece:before {
+  content: "\F12E";
+}
+.fa-microphone:before {
+  content: "\F130";
+}
+.fa-microphone-slash:before {
+  content: "\F131";
+}
+.fa-shield:before {
+  content: "\F132";
+}
+.fa-calendar-o:before {
+  content: "\F133";
+}
+.fa-fire-extinguisher:before {
+  content: "\F134";
+}
+.fa-rocket:before {
+  content: "\F135";
+}
+.fa-maxcdn:before {
+  content: "\F136";
+}
+.fa-chevron-circle-left:before {
+  content: "\F137";
+}
+.fa-chevron-circle-right:before {
+  content: "\F138";
+}
+.fa-chevron-circle-up:before {
+  content: "\F139";
+}
+.fa-chevron-circle-down:before {
+  content: "\F13A";
+}
+.fa-html5:before {
+  content: "\F13B";
+}
+.fa-css3:before {
+  content: "\F13C";
+}
+.fa-anchor:before {
+  content: "\F13D";
+}
+.fa-unlock-alt:before {
+  content: "\F13E";
+}
+.fa-bullseye:before {
+  content: "\F140";
+}
+.fa-ellipsis-h:before {
+  content: "\F141";
+}
+.fa-ellipsis-v:before {
+  content: "\F142";
+}
+.fa-rss-square:before {
+  content: "\F143";
+}
+.fa-play-circle:before {
+  content: "\F144";
+}
+.fa-ticket:before {
+  content: "\F145";
+}
+.fa-minus-square:before {
+  content: "\F146";
+}
+.fa-minus-square-o:before {
+  content: "\F147";
+}
+.fa-level-up:before {
+  content: "\F148";
+}
+.fa-level-down:before {
+  content: "\F149";
+}
+.fa-check-square:before {
+  content: "\F14A";
+}
+.fa-pencil-square:before {
+  content: "\F14B";
+}
+.fa-external-link-square:before {
+  content: "\F14C";
+}
+.fa-share-square:before {
+  content: "\F14D";
+}
+.fa-compass:before {
+  content: "\F14E";
+}
+.fa-toggle-down:before,
+.fa-caret-square-o-down:before {
+  content: "\F150";
+}
+.fa-toggle-up:before,
+.fa-caret-square-o-up:before {
+  content: "\F151";
+}
+.fa-toggle-right:before,
+.fa-caret-square-o-right:before {
+  content: "\F152";
+}
+.fa-euro:before,
+.fa-eur:before {
+  content: "\F153";
+}
+.fa-gbp:before {
+  content: "\F154";
+}
+.fa-dollar:before,
+.fa-usd:before {
+  content: "\F155";
+}
+.fa-rupee:before,
+.fa-inr:before {
+  content: "\F156";
+}
+.fa-cny:before,
+.fa-rmb:before,
+.fa-yen:before,
+.fa-jpy:before {
+  content: "\F157";
+}
+.fa-ruble:before,
+.fa-rouble:before,
+.fa-rub:before {
+  content: "\F158";
+}
+.fa-won:before,
+.fa-krw:before {
+  content: "\F159";
+}
+.fa-bitcoin:before,
+.fa-btc:before {
+  content: "\F15A";
+}
+.fa-file:before {
+  content: "\F15B";
+}
+.fa-file-text:before {
+  content: "\F15C";
+}
+.fa-sort-alpha-asc:before {
+  content: "\F15D";
+}
+.fa-sort-alpha-desc:before {
+  content: "\F15E";
+}
+.fa-sort-amount-asc:before {
+  content: "\F160";
+}
+.fa-sort-amount-desc:before {
+  content: "\F161";
+}
+.fa-sort-numeric-asc:before {
+  content: "\F162";
+}
+.fa-sort-numeric-desc:before {
+  content: "\F163";
+}
+.fa-thumbs-up:before {
+  content: "\F164";
+}
+.fa-thumbs-down:before {
+  content: "\F165";
+}
+.fa-youtube-square:before {
+  content: "\F166";
+}
+.fa-youtube:before {
+  content: "\F167";
+}
+.fa-xing:before {
+  content: "\F168";
+}
+.fa-xing-square:before {
+  content: "\F169";
+}
+.fa-youtube-play:before {
+  content: "\F16A";
+}
+.fa-dropbox:before {
+  content: "\F16B";
+}
+.fa-stack-overflow:before {
+  content: "\F16C";
+}
+.fa-instagram:before {
+  content: "\F16D";
+}
+.fa-flickr:before {
+  content: "\F16E";
+}
+.fa-adn:before {
+  content: "\F170";
+}
+.fa-bitbucket:before {
+  content: "\F171";
+}
+.fa-bitbucket-square:before {
+  content: "\F172";
+}
+.fa-tumblr:before {
+  content: "\F173";
+}
+.fa-tumblr-square:before {
+  content: "\F174";
+}
+.fa-long-arrow-down:before {
+  content: "\F175";
+}
+.fa-long-arrow-up:before {
+  content: "\F176";
+}
+.fa-long-arrow-left:before {
+  content: "\F177";
+}
+.fa-long-arrow-right:before {
+  content: "\F178";
+}
+.fa-apple:before {
+  content: "\F179";
+}
+.fa-windows:before {
+  content: "\F17A";
+}
+.fa-android:before {
+  content: "\F17B";
+}
+.fa-linux:before {
+  content: "\F17C";
+}
+.fa-dribbble:before {
+  content: "\F17D";
+}
+.fa-skype:before {
+  content: "\F17E";
+}
+.fa-foursquare:before {
+  content: "\F180";
+}
+.fa-trello:before {
+  content: "\F181";
+}
+.fa-female:before {
+  content: "\F182";
+}
+.fa-male:before {
+  content: "\F183";
+}
+.fa-gittip:before,
+.fa-gratipay:before {
+  content: "\F184";
+}
+.fa-sun-o:before {
+  content: "\F185";
+}
+.fa-moon-o:before {
+  content: "\F186";
+}
+.fa-archive:before {
+  content: "\F187";
+}
+.fa-bug:before {
+  content: "\F188";
+}
+.fa-vk:before {
+  content: "\F189";
+}
+.fa-weibo:before {
+  content: "\F18A";
+}
+.fa-renren:before {
+  content: "\F18B";
+}
+.fa-pagelines:before {
+  content: "\F18C";
+}
+.fa-stack-exchange:before {
+  content: "\F18D";
+}
+.fa-arrow-circle-o-right:before {
+  content: "\F18E";
+}
+.fa-arrow-circle-o-left:before {
+  content: "\F190";
+}
+.fa-toggle-left:before,
+.fa-caret-square-o-left:before {
+  content: "\F191";
+}
+.fa-dot-circle-o:before {
+  content: "\F192";
+}
+.fa-wheelchair:before {
+  content: "\F193";
+}
+.fa-vimeo-square:before {
+  content: "\F194";
+}
+.fa-turkish-lira:before,
+.fa-try:before {
+  content: "\F195";
+}
+.fa-plus-square-o:before {
+  content: "\F196";
+}
+.fa-space-shuttle:before {
+  content: "\F197";
+}
+.fa-slack:before {
+  content: "\F198";
+}
+.fa-envelope-square:before {
+  content: "\F199";
+}
+.fa-wordpress:before {
+  content: "\F19A";
+}
+.fa-openid:before {
+  content: "\F19B";
+}
+.fa-institution:before,
+.fa-bank:before,
+.fa-university:before {
+  content: "\F19C";
+}
+.fa-mortar-board:before,
+.fa-graduation-cap:before {
+  content: "\F19D";
+}
+.fa-yahoo:before {
+  content: "\F19E";
+}
+.fa-google:before {
+  content: "\F1A0";
+}
+.fa-reddit:before {
+  content: "\F1A1";
+}
+.fa-reddit-square:before {
+  content: "\F1A2";
+}
+.fa-stumbleupon-circle:before {
+  content: "\F1A3";
+}
+.fa-stumbleupon:before {
+  content: "\F1A4";
+}
+.fa-delicious:before {
+  content: "\F1A5";
+}
+.fa-digg:before {
+  content: "\F1A6";
+}
+.fa-pied-piper-pp:before {
+  content: "\F1A7";
+}
+.fa-pied-piper-alt:before {
+  content: "\F1A8";
+}
+.fa-drupal:before {
+  content: "\F1A9";
+}
+.fa-joomla:before {
+  content: "\F1AA";
+}
+.fa-language:before {
+  content: "\F1AB";
+}
+.fa-fax:before {
+  content: "\F1AC";
+}
+.fa-building:before {
+  content: "\F1AD";
+}
+.fa-child:before {
+  content: "\F1AE";
+}
+.fa-paw:before {
+  content: "\F1B0";
+}
+.fa-spoon:before {
+  content: "\F1B1";
+}
+.fa-cube:before {
+  content: "\F1B2";
+}
+.fa-cubes:before {
+  content: "\F1B3";
+}
+.fa-behance:before {
+  content: "\F1B4";
+}
+.fa-behance-square:before {
+  content: "\F1B5";
+}
+.fa-steam:before {
+  content: "\F1B6";
+}
+.fa-steam-square:before {
+  content: "\F1B7";
+}
+.fa-recycle:before {
+  content: "\F1B8";
+}
+.fa-automobile:before,
+.fa-car:before {
+  content: "\F1B9";
+}
+.fa-cab:before,
+.fa-taxi:before {
+  content: "\F1BA";
+}
+.fa-tree:before {
+  content: "\F1BB";
+}
+.fa-spotify:before {
+  content: "\F1BC";
+}
+.fa-deviantart:before {
+  content: "\F1BD";
+}
+.fa-soundcloud:before {
+  content: "\F1BE";
+}
+.fa-database:before {
+  content: "\F1C0";
+}
+.fa-file-pdf-o:before {
+  content: "\F1C1";
+}
+.fa-file-word-o:before {
+  content: "\F1C2";
+}
+.fa-file-excel-o:before {
+  content: "\F1C3";
+}
+.fa-file-powerpoint-o:before {
+  content: "\F1C4";
+}
+.fa-file-photo-o:before,
+.fa-file-picture-o:before,
+.fa-file-image-o:before {
+  content: "\F1C5";
+}
+.fa-file-zip-o:before,
+.fa-file-archive-o:before {
+  content: "\F1C6";
+}
+.fa-file-sound-o:before,
+.fa-file-audio-o:before {
+  content: "\F1C7";
+}
+.fa-file-movie-o:before,
+.fa-file-video-o:before {
+  content: "\F1C8";
+}
+.fa-file-code-o:before {
+  content: "\F1C9";
+}
+.fa-vine:before {
+  content: "\F1CA";
+}
+.fa-codepen:before {
+  content: "\F1CB";
+}
+.fa-jsfiddle:before {
+  content: "\F1CC";
+}
+.fa-life-bouy:before,
+.fa-life-buoy:before,
+.fa-life-saver:before,
+.fa-support:before,
+.fa-life-ring:before {
+  content: "\F1CD";
+}
+.fa-circle-o-notch:before {
+  content: "\F1CE";
+}
+.fa-ra:before,
+.fa-resistance:before,
+.fa-rebel:before {
+  content: "\F1D0";
+}
+.fa-ge:before,
+.fa-empire:before {
+  content: "\F1D1";
+}
+.fa-git-square:before {
+  content: "\F1D2";
+}
+.fa-git:before {
+  content: "\F1D3";
+}
+.fa-y-combinator-square:before,
+.fa-yc-square:before,
+.fa-hacker-news:before {
+  content: "\F1D4";
+}
+.fa-tencent-weibo:before {
+  content: "\F1D5";
+}
+.fa-qq:before {
+  content: "\F1D6";
+}
+.fa-wechat:before,
+.fa-weixin:before {
+  content: "\F1D7";
+}
+.fa-send:before,
+.fa-paper-plane:before {
+  content: "\F1D8";
+}
+.fa-send-o:before,
+.fa-paper-plane-o:before {
+  content: "\F1D9";
+}
+.fa-history:before {
+  content: "\F1DA";
+}
+.fa-circle-thin:before {
+  content: "\F1DB";
+}
+.fa-header:before {
+  content: "\F1DC";
+}
+.fa-paragraph:before {
+  content: "\F1DD";
+}
+.fa-sliders:before {
+  content: "\F1DE";
+}
+.fa-share-alt:before {
+  content: "\F1E0";
+}
+.fa-share-alt-square:before {
+  content: "\F1E1";
+}
+.fa-bomb:before {
+  content: "\F1E2";
+}
+.fa-soccer-ball-o:before,
+.fa-futbol-o:before {
+  content: "\F1E3";
+}
+.fa-tty:before {
+  content: "\F1E4";
+}
+.fa-binoculars:before {
+  content: "\F1E5";
+}
+.fa-plug:before {
+  content: "\F1E6";
+}
+.fa-slideshare:before {
+  content: "\F1E7";
+}
+.fa-twitch:before {
+  content: "\F1E8";
+}
+.fa-yelp:before {
+  content: "\F1E9";
+}
+.fa-newspaper-o:before {
+  content: "\F1EA";
+}
+.fa-wifi:before {
+  content: "\F1EB";
+}
+.fa-calculator:before {
+  content: "\F1EC";
+}
+.fa-paypal:before {
+  content: "\F1ED";
+}
+.fa-google-wallet:before {
+  content: "\F1EE";
+}
+.fa-cc-visa:before {
+  content: "\F1F0";
+}
+.fa-cc-mastercard:before {
+  content: "\F1F1";
+}
+.fa-cc-discover:before {
+  content: "\F1F2";
+}
+.fa-cc-amex:before {
+  content: "\F1F3";
+}
+.fa-cc-paypal:before {
+  content: "\F1F4";
+}
+.fa-cc-stripe:before {
+  content: "\F1F5";
+}
+.fa-bell-slash:before {
+  content: "\F1F6";
+}
+.fa-bell-slash-o:before {
+  content: "\F1F7";
+}
+.fa-trash:before {
+  content: "\F1F8";
+}
+.fa-copyright:before {
+  content: "\F1F9";
+}
+.fa-at:before {
+  content: "\F1FA";
+}
+.fa-eyedropper:before {
+  content: "\F1FB";
+}
+.fa-paint-brush:before {
+  content: "\F1FC";
+}
+.fa-birthday-cake:before {
+  content: "\F1FD";
+}
+.fa-area-chart:before {
+  content: "\F1FE";
+}
+.fa-pie-chart:before {
+  content: "\F200";
+}
+.fa-line-chart:before {
+  content: "\F201";
+}
+.fa-lastfm:before {
+  content: "\F202";
+}
+.fa-lastfm-square:before {
+  content: "\F203";
+}
+.fa-toggle-off:before {
+  content: "\F204";
+}
+.fa-toggle-on:before {
+  content: "\F205";
+}
+.fa-bicycle:before {
+  content: "\F206";
+}
+.fa-bus:before {
+  content: "\F207";
+}
+.fa-ioxhost:before {
+  content: "\F208";
+}
+.fa-angellist:before {
+  content: "\F209";
+}
+.fa-cc:before {
+  content: "\F20A";
+}
+.fa-shekel:before,
+.fa-sheqel:before,
+.fa-ils:before {
+  content: "\F20B";
+}
+.fa-meanpath:before {
+  content: "\F20C";
+}
+.fa-buysellads:before {
+  content: "\F20D";
+}
+.fa-connectdevelop:before {
+  content: "\F20E";
+}
+.fa-dashcube:before {
+  content: "\F210";
+}
+.fa-forumbee:before {
+  content: "\F211";
+}
+.fa-leanpub:before {
+  content: "\F212";
+}
+.fa-sellsy:before {
+  content: "\F213";
+}
+.fa-shirtsinbulk:before {
+  content: "\F214";
+}
+.fa-simplybuilt:before {
+  content: "\F215";
+}
+.fa-skyatlas:before {
+  content: "\F216";
+}
+.fa-cart-plus:before {
+  content: "\F217";
+}
+.fa-cart-arrow-down:before {
+  content: "\F218";
+}
+.fa-diamond:before {
+  content: "\F219";
+}
+.fa-ship:before {
+  content: "\F21A";
+}
+.fa-user-secret:before {
+  content: "\F21B";
+}
+.fa-motorcycle:before {
+  content: "\F21C";
+}
+.fa-street-view:before {
+  content: "\F21D";
+}
+.fa-heartbeat:before {
+  content: "\F21E";
+}
+.fa-venus:before {
+  content: "\F221";
+}
+.fa-mars:before {
+  content: "\F222";
+}
+.fa-mercury:before {
+  content: "\F223";
+}
+.fa-intersex:before,
+.fa-transgender:before {
+  content: "\F224";
+}
+.fa-transgender-alt:before {
+  content: "\F225";
+}
+.fa-venus-double:before {
+  content: "\F226";
+}
+.fa-mars-double:before {
+  content: "\F227";
+}
+.fa-venus-mars:before {
+  content: "\F228";
+}
+.fa-mars-stroke:before {
+  content: "\F229";
+}
+.fa-mars-stroke-v:before {
+  content: "\F22A";
+}
+.fa-mars-stroke-h:before {
+  content: "\F22B";
+}
+.fa-neuter:before {
+  content: "\F22C";
+}
+.fa-genderless:before {
+  content: "\F22D";
+}
+.fa-facebook-official:before {
+  content: "\F230";
+}
+.fa-pinterest-p:before {
+  content: "\F231";
+}
+.fa-whatsapp:before {
+  content: "\F232";
+}
+.fa-server:before {
+  content: "\F233";
+}
+.fa-user-plus:before {
+  content: "\F234";
+}
+.fa-user-times:before {
+  content: "\F235";
+}
+.fa-hotel:before,
+.fa-bed:before {
+  content: "\F236";
+}
+.fa-viacoin:before {
+  content: "\F237";
+}
+.fa-train:before {
+  content: "\F238";
+}
+.fa-subway:before {
+  content: "\F239";
+}
+.fa-medium:before {
+  content: "\F23A";
+}
+.fa-yc:before,
+.fa-y-combinator:before {
+  content: "\F23B";
+}
+.fa-optin-monster:before {
+  content: "\F23C";
+}
+.fa-opencart:before {
+  content: "\F23D";
+}
+.fa-expeditedssl:before {
+  content: "\F23E";
+}
+.fa-battery-4:before,
+.fa-battery:before,
+.fa-battery-full:before {
+  content: "\F240";
+}
+.fa-battery-3:before,
+.fa-battery-three-quarters:before {
+  content: "\F241";
+}
+.fa-battery-2:before,
+.fa-battery-half:before {
+  content: "\F242";
+}
+.fa-battery-1:before,
+.fa-battery-quarter:before {
+  content: "\F243";
+}
+.fa-battery-0:before,
+.fa-battery-empty:before {
+  content: "\F244";
+}
+.fa-mouse-pointer:before {
+  content: "\F245";
+}
+.fa-i-cursor:before {
+  content: "\F246";
+}
+.fa-object-group:before {
+  content: "\F247";
+}
+.fa-object-ungroup:before {
+  content: "\F248";
+}
+.fa-sticky-note:before {
+  content: "\F249";
+}
+.fa-sticky-note-o:before {
+  content: "\F24A";
+}
+.fa-cc-jcb:before {
+  content: "\F24B";
+}
+.fa-cc-diners-club:before {
+  content: "\F24C";
+}
+.fa-clone:before {
+  content: "\F24D";
+}
+.fa-balance-scale:before {
+  content: "\F24E";
+}
+.fa-hourglass-o:before {
+  content: "\F250";
+}
+.fa-hourglass-1:before,
+.fa-hourglass-start:before {
+  content: "\F251";
+}
+.fa-hourglass-2:before,
+.fa-hourglass-half:before {
+  content: "\F252";
+}
+.fa-hourglass-3:before,
+.fa-hourglass-end:before {
+  content: "\F253";
+}
+.fa-hourglass:before {
+  content: "\F254";
+}
+.fa-hand-grab-o:before,
+.fa-hand-rock-o:before {
+  content: "\F255";
+}
+.fa-hand-stop-o:before,
+.fa-hand-paper-o:before {
+  content: "\F256";
+}
+.fa-hand-scissors-o:before {
+  content: "\F257";
+}
+.fa-hand-lizard-o:before {
+  content: "\F258";
+}
+.fa-hand-spock-o:before {
+  content: "\F259";
+}
+.fa-hand-pointer-o:before {
+  content: "\F25A";
+}
+.fa-hand-peace-o:before {
+  content: "\F25B";
+}
+.fa-trademark:before {
+  content: "\F25C";
+}
+.fa-registered:before {
+  content: "\F25D";
+}
+.fa-creative-commons:before {
+  content: "\F25E";
+}
+.fa-gg:before {
+  content: "\F260";
+}
+.fa-gg-circle:before {
+  content: "\F261";
+}
+.fa-tripadvisor:before {
+  content: "\F262";
+}
+.fa-odnoklassniki:before {
+  content: "\F263";
+}
+.fa-odnoklassniki-square:before {
+  content: "\F264";
+}
+.fa-get-pocket:before {
+  content: "\F265";
+}
+.fa-wikipedia-w:before {
+  content: "\F266";
+}
+.fa-safari:before {
+  content: "\F267";
+}
+.fa-chrome:before {
+  content: "\F268";
+}
+.fa-firefox:before {
+  content: "\F269";
+}
+.fa-opera:before {
+  content: "\F26A";
+}
+.fa-internet-explorer:before {
+  content: "\F26B";
+}
+.fa-tv:before,
+.fa-television:before {
+  content: "\F26C";
+}
+.fa-contao:before {
+  content: "\F26D";
+}
+.fa-500px:before {
+  content: "\F26E";
+}
+.fa-amazon:before {
+  content: "\F270";
+}
+.fa-calendar-plus-o:before {
+  content: "\F271";
+}
+.fa-calendar-minus-o:before {
+  content: "\F272";
+}
+.fa-calendar-times-o:before {
+  content: "\F273";
+}
+.fa-calendar-check-o:before {
+  content: "\F274";
+}
+.fa-industry:before {
+  content: "\F275";
+}
+.fa-map-pin:before {
+  content: "\F276";
+}
+.fa-map-signs:before {
+  content: "\F277";
+}
+.fa-map-o:before {
+  content: "\F278";
+}
+.fa-map:before {
+  content: "\F279";
+}
+.fa-commenting:before {
+  content: "\F27A";
+}
+.fa-commenting-o:before {
+  content: "\F27B";
+}
+.fa-houzz:before {
+  content: "\F27C";
+}
+.fa-vimeo:before {
+  content: "\F27D";
+}
+.fa-black-tie:before {
+  content: "\F27E";
+}
+.fa-fonticons:before {
+  content: "\F280";
+}
+.fa-reddit-alien:before {
+  content: "\F281";
+}
+.fa-edge:before {
+  content: "\F282";
+}
+.fa-credit-card-alt:before {
+  content: "\F283";
+}
+.fa-codiepie:before {
+  content: "\F284";
+}
+.fa-modx:before {
+  content: "\F285";
+}
+.fa-fort-awesome:before {
+  content: "\F286";
+}
+.fa-usb:before {
+  content: "\F287";
+}
+.fa-product-hunt:before {
+  content: "\F288";
+}
+.fa-mixcloud:before {
+  content: "\F289";
+}
+.fa-scribd:before {
+  content: "\F28A";
+}
+.fa-pause-circle:before {
+  content: "\F28B";
+}
+.fa-pause-circle-o:before {
+  content: "\F28C";
+}
+.fa-stop-circle:before {
+  content: "\F28D";
+}
+.fa-stop-circle-o:before {
+  content: "\F28E";
+}
+.fa-shopping-bag:before {
+  content: "\F290";
+}
+.fa-shopping-basket:before {
+  content: "\F291";
+}
+.fa-hashtag:before {
+  content: "\F292";
+}
+.fa-bluetooth:before {
+  content: "\F293";
+}
+.fa-bluetooth-b:before {
+  content: "\F294";
+}
+.fa-percent:before {
+  content: "\F295";
+}
+.fa-gitlab:before {
+  content: "\F296";
+}
+.fa-wpbeginner:before {
+  content: "\F297";
+}
+.fa-wpforms:before {
+  content: "\F298";
+}
+.fa-envira:before {
+  content: "\F299";
+}
+.fa-universal-access:before {
+  content: "\F29A";
+}
+.fa-wheelchair-alt:before {
+  content: "\F29B";
+}
+.fa-question-circle-o:before {
+  content: "\F29C";
+}
+.fa-blind:before {
+  content: "\F29D";
+}
+.fa-audio-description:before {
+  content: "\F29E";
+}
+.fa-volume-control-phone:before {
+  content: "\F2A0";
+}
+.fa-braille:before {
+  content: "\F2A1";
+}
+.fa-assistive-listening-systems:before {
+  content: "\F2A2";
+}
+.fa-asl-interpreting:before,
+.fa-american-sign-language-interpreting:before {
+  content: "\F2A3";
+}
+.fa-deafness:before,
+.fa-hard-of-hearing:before,
+.fa-deaf:before {
+  content: "\F2A4";
+}
+.fa-glide:before {
+  content: "\F2A5";
+}
+.fa-glide-g:before {
+  content: "\F2A6";
+}
+.fa-signing:before,
+.fa-sign-language:before {
+  content: "\F2A7";
+}
+.fa-low-vision:before {
+  content: "\F2A8";
+}
+.fa-viadeo:before {
+  content: "\F2A9";
+}
+.fa-viadeo-square:before {
+  content: "\F2AA";
+}
+.fa-snapchat:before {
+  content: "\F2AB";
+}
+.fa-snapchat-ghost:before {
+  content: "\F2AC";
+}
+.fa-snapchat-square:before {
+  content: "\F2AD";
+}
+.fa-pied-piper:before {
+  content: "\F2AE";
+}
+.fa-first-order:before {
+  content: "\F2B0";
+}
+.fa-yoast:before {
+  content: "\F2B1";
+}
+.fa-themeisle:before {
+  content: "\F2B2";
+}
+.fa-google-plus-circle:before,
+.fa-google-plus-official:before {
+  content: "\F2B3";
+}
+.fa-fa:before,
+.fa-font-awesome:before {
+  content: "\F2B4";
+}
+.fa-handshake-o:before {
+  content: "\F2B5";
+}
+.fa-envelope-open:before {
+  content: "\F2B6";
+}
+.fa-envelope-open-o:before {
+  content: "\F2B7";
+}
+.fa-linode:before {
+  content: "\F2B8";
+}
+.fa-address-book:before {
+  content: "\F2B9";
+}
+.fa-address-book-o:before {
+  content: "\F2BA";
+}
+.fa-vcard:before,
+.fa-address-card:before {
+  content: "\F2BB";
+}
+.fa-vcard-o:before,
+.fa-address-card-o:before {
+  content: "\F2BC";
+}
+.fa-user-circle:before {
+  content: "\F2BD";
+}
+.fa-user-circle-o:before {
+  content: "\F2BE";
+}
+.fa-user-o:before {
+  content: "\F2C0";
+}
+.fa-id-badge:before {
+  content: "\F2C1";
+}
+.fa-drivers-license:before,
+.fa-id-card:before {
+  content: "\F2C2";
+}
+.fa-drivers-license-o:before,
+.fa-id-card-o:before {
+  content: "\F2C3";
+}
+.fa-quora:before {
+  content: "\F2C4";
+}
+.fa-free-code-camp:before {
+  content: "\F2C5";
+}
+.fa-telegram:before {
+  content: "\F2C6";
+}
+.fa-thermometer-4:before,
+.fa-thermometer:before,
+.fa-thermometer-full:before {
+  content: "\F2C7";
+}
+.fa-thermometer-3:before,
+.fa-thermometer-three-quarters:before {
+  content: "\F2C8";
+}
+.fa-thermometer-2:before,
+.fa-thermometer-half:before {
+  content: "\F2C9";
+}
+.fa-thermometer-1:before,
+.fa-thermometer-quarter:before {
+  content: "\F2CA";
+}
+.fa-thermometer-0:before,
+.fa-thermometer-empty:before {
+  content: "\F2CB";
+}
+.fa-shower:before {
+  content: "\F2CC";
+}
+.fa-bathtub:before,
+.fa-s15:before,
+.fa-bath:before {
+  content: "\F2CD";
+}
+.fa-podcast:before {
+  content: "\F2CE";
+}
+.fa-window-maximize:before {
+  content: "\F2D0";
+}
+.fa-window-minimize:before {
+  content: "\F2D1";
+}
+.fa-window-restore:before {
+  content: "\F2D2";
+}
+.fa-times-rectangle:before,
+.fa-window-close:before {
+  content: "\F2D3";
+}
+.fa-times-rectangle-o:before,
+.fa-window-close-o:before {
+  content: "\F2D4";
+}
+.fa-bandcamp:before {
+  content: "\F2D5";
+}
+.fa-grav:before {
+  content: "\F2D6";
+}
+.fa-etsy:before {
+  content: "\F2D7";
+}
+.fa-imdb:before {
+  content: "\F2D8";
+}
+.fa-ravelry:before {
+  content: "\F2D9";
+}
+.fa-eercast:before {
+  content: "\F2DA";
+}
+.fa-microchip:before {
+  content: "\F2DB";
+}
+.fa-snowflake-o:before {
+  content: "\F2DC";
+}
+.fa-superpowers:before {
+  content: "\F2DD";
+}
+.fa-wpexplorer:before {
+  content: "\F2DE";
+}
+.fa-meetup:before {
+  content: "\F2E0";
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+.sr-only-focusable:active,
+.sr-only-focusable:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  clip: auto;
+}
+/** GENERAL **/
+body { background-color:#f2f2f2; font:17px 'Roboto Condensed'; color:#323A45; -webkit-user-select:none; -moz-user-select:none; -ms-user-select:none; user-select:none; }
+body.switch-left .header_logo, body.switch-left .header_sp, body.switch-left .main { margin: 0 0 0 1%!important;}
+h2 { color:#fff; font-size:20px; text-align:center; margin:0 0 10px 0; background-color:#ccc; width:100%; clear:both; text-transform:uppercase; padding:10px; }
+h3 { color:#444444; font-size:20px; font-weight:400; }
+i { color:#444444; }
+a:link, a:visited, a:hover, a:active, a:focus { text-decoration:none; color:#E41800;}
+.picture img, .map img { width:100%; height:100%; }
+.clearfix { clear:both; }
+.links { float: left; }
+.rechts { float:right; }
+.main_darkhover { z-index: 1; position: absolute; width: 100%; background-color: #000; height: 7000px; overflow: hidden; display: none; }
+.transparent { zoom: 1; filter: alpha(opacity=80); opacity: 0.8; }
+.margin-null {margin: 0 0 0 1%!important; left:0!important;}
+
+/** HEADER **/
+header { width:100%; position:fixed; z-index:100; }
+.header_logocontainer { position:relative;	height:80px; background-color:#2c2c2c; }
+.header_logo { position:relative; width:100%; max-width:1200px; margin:0 auto; }
+.header_logo_img { position:absolute; width:144px; top:15px; left:10px; }
+.header_logo_bewerb { position:relative; text-align:center; top:30px; color:#FFFFFF; font-size:25px; }
+.header_logo_aktualisieren { position:absolute; top:35px; right:0; color:#FFFFFF; cursor:pointer; }
+.header_spcontainer { position:relative; height:80px; background-color:#3f3f3f; }
+.header_sp { position:relative; width:100%; max-width:1200px; margin:0 auto; cursor:pointer; }
+.header_sp_konferenzbtn, .header_sp_nextbuttonlinks, .header_sp_nextbuttonrechts { position:absolute; top:10px; left:0; width:120px; height:60px; border:none; border-radius:0; color:#FFF; text-align:center; line-height:55px; background-color: #2c2c2c; padding-top:2px; }
+.header_sp_nextbuttonlinks, .header_sp_nextbuttonrechts { background-color:#e41800; width:35px; height:35px; font-size:40px; line-height:20px; top:23px; }
+.header_sp_nextbuttonlinks { left:130px; }
+.header_sp_nextbuttonrechts { left:auto; right:0; }
+.header_sp_nextbuttonrechts.inactive, .header_sp_nextbuttonlinks.inactive { z-index:10; background-color:#a6a6a6; color:#f2f2f2; opacity:0.25; }
+.header_sp_spielbutton_container { left:200px; height:60px; background-color:red; }
+.header_sp_spielbutton { position:relative; float:left; margin-right:10px; top:10px; left:190px; width:140px; height:60px; color:#FFF;
+	text-align:center; background: #2c2c2c; }
+.header_sp_spielbutton_spielstand.live { color:#E41800; }
+.header_sp_spielbutton_spielstand { width:100%; margin:10px auto; font-weight:bold; font-size:20px; }
+.header_sp_spielbutton_zeit { position:absolute; font-size:11px; width:100%; margin:auto; bottom:5px; }
+.header_sp_spielbutton_teamlinks { position:absolute; font-size:11px; bottom:5px; left:15px; }
+.header_sp_spielbutton_teamrechts {	position:absolute; font-size:11px; bottom:5px; right:15px; }
+.header_sp_spielbutton_logorechts { position:absolute; width:25px; height:25px; top:8px; right:10px; }
+.header_sp_spielbutton_logolinks { position:absolute; width:25px; height:25px; top:8px; left:10px; }
+.header_sp_konferenzbtn:hover, .header_sp_spielbutton:hover, .header_sp_nextbuttonlinks:hover, .header_sp_nextbuttonrechts:hover { background-color:#E41800; }
+.header_sp_nextbuttonrechts.inactive:hover, .header_sp_nextbuttonlinks.inactive:hover { background-color:#a6a6a6; }	
+.header_sp_spielbutton:hover .header_sp_spielbutton_spielstand, .header_sp_spielbutton_spielstand.rot:hover { color:white!important; }
+.header_sp_spielbutton.active, .header_sp_konferenzbtn.active { background: white; color: black; border-left:4px solid #e41800; border-right:4px solid #e41800; }
+
+.header_ligacontainer { position: relative; height: 80px; background-color: #333; }
+.header_liga { position: absolute; width: 450px; left: 50%; cursor: pointer;  margin-left: -220px; }
+.header_liga .header_sp_spielbutton_spielstand img { max-height: 40px; max-width: 110px; vertical-align: middle; }
+.header_liga .header_sp_spielbutton_spielstand span { line-height: 40px; }
+.header_liga .header_sp_spielbutton { left:0;  background: #aaa; }
+.header_liga .header_sp_spielbutton.active, .header_liga .header_sp_spielbutton:hover { background: white; }
+.header_sp_spielbutton.active:hover .header_sp_spielbutton_spielstand span { color: #e41800; }
+.header_liga .header_sp_spielbutton.inactive { }
+.header_liga .header_sp_spielbutton.inactive:hover { cursor: default; background: #e41800; }
+.international .main_container { top: 240px; }
+
+.header_tinynav { position: relative; height: 60px; display: none; background-color: #555; border-bottom: 1px solid #DDDDDD; padding-left: 10px; }
+.header_tinynav_menupunkte, .header_tinynav_back { margin:5px 10px 0 0; color: #FFF; background-color:#2c2c2c; padding:0 15px; height:45px; line-height: 45px; cursor: pointer; -webkit-user-select: none; }
+.header_tinynav_back { margin: 5px 3px 0 0; padding:0 20px; display:none; }
+.header_tinynav_bewerbe { margin: 5px 3px 0 0; cursor:pointer; -webkit-user-select: none; }
+.header_tinynav_bewerbe .konferenz { line-height: 45px; }
+.header_tinynav_bewerbe .choosen { top: 0; left: 0; }
+
+/** PROGRESSBAR **/
+.progressbar { width:82px; height:5px; margin-top:5px; }
+.progressactivated { background-color:white;      
+    -webkit-animation-name:tickerprogress; -webkit-animation-duration:20s; -webkit-animation-timing-function:linear; -webkit-animation-iteration-count:infinite;
+    -moz-animation-name:tickerprogress; -moz-animation-duration:20s; -moz-animation-timing-function:linear; -moz-animation-iteration-count:infinite;
+    animation-name:tickerprogress; animation-duration:20s; animation-timing-function:linear; animation-iteration-count:infinite; }
+
+@-moz-keyframes tickerprogress  { 0% { width: 0% } 100% { width: 100% } }
+@-webkit-keyframes tickerprogress {	0% { width: 0%  } 100% { width: 100%  } }
+@keyframes tickerprogress { 0% { width: 0%  } 100% { width: 100%  } }
+
+/** NAVIGATION **/
+.tiny_main_nav { position:absolute; width:180px; display:none; margin-left:20px; }
+.tiny_main_nav .live_button, .tiny_game_nav .live_button { width:50px; height:50px; border:1px solid #fff; border-radius:4px; color:#FFF; text-align:center; line-height:45px; margin-top:5px; 
+	display:inline-block; }	
+.tiny_main_nav .live_button a { color:white; text-align:left; }
+.tiny_main_nav .live_button [class^="icon-"], .tiny_main_nav .live_button [class*="icon-"] { color:white; }
+.tiny_main_nav .live_button a [class^="icon-"],.tiny_main_nav .live_button a [class*=" icon-"] { color:white; padding: 0 6px; }
+.tiny_main_nav .header_dropdownbutton, .tiny_game_nav .header_dropdownbutton { width:50px; height:50px; border:1px solid #fff; border-radius:4px; color:#FFFFFF; text-align:center;
+	line-height:50px; margin-top:5px; display:inline-block; float:right; }
+.tiny_game_nav { position:absolute; width:180px; display:none; right:0; margin-right:20px; }
+.tiny_game_nav .header_sp_spielbutton { left:auto; top:auto; margin:5px 0 0; width:170px; float:none;  }
+.tiny_game_nav .header_sp_spielbutton.choosen { width:120px;  display:inline-block;}
+.tiny_main_nav .main_dropdown, .tiny_game_nav .game_dropdown { margin-left:-5px; margin-top:5px; width:190px; padding:10px; background:#555; display:none; }
+.tiny_main_nav .main_dropdown .live_button, .tiny_game_nav .game_dropdown .live_button { width:170px; }
+.tiny_main_nav .main_dropdown .live_button a, .tiny_game_nav .game_dropdown .live_button a{ display:block; color:white; background:#323A45; }
+.tiny_main_nav .main_dropdown .live_button:hover a, .tiny_game_nav .game_dropdown .live_button:hover { background:#E41800; }
+
+/** MAIN **/
+.main_container { position:absolute; width:100%; top:160px; background-color:green; z-index:90; }
+.main { position:relative; width:100%; max-width:1200px;	margin:0 auto; }
+.sitebar { height:100%; width:100%; left:50%; top:160px; position:fixed; z-index:80; margin-left:600px; }
+.international .sitebar { top:240px; }
+.wettbox { position:relative; float:left; margin:1%; width:23%; height:224px; text-align:center; overflow:hidden; padding-top:1.7%; /*background-color:#f9f9f9; */}
+
+/** main menupunkte **/
+.main_menupunkte ul li [class^="icon-"], .main_menupunkte ul li [class*=" icon-"] { color:#3f3f3f; font-size:25px; text-align:center; line-height:30px; }
+.main_menupunkte ul li:hover [class^="icon-"], .main_menupunkte ul li:hover [class*=" icon-"] { color:#e41800; }
+.main_menupunkte { position:absolute; width:10%; }
+.main_menupunkte li { position:relative; width:60px; height:30px; margin:15px auto 0; border-right:3px solid #3f3f3f; text-align:center; line-height:30px; color:#3f3f3f; font-weight:bold; font-size:20px; }
+.main_menupunkte li a { cursor: pointer; color:#3f3f3f; }
+.main_menupunkte li:hover, .main_menupunkte li.active { /*border:2px solid #E41800; background-color:#E41800; color: #fff;*/ border-right:3px solid #e41800; color:#e41800!important; }
+.main_menupunkte ul li.active [class^="icon-"], .main_menupunkte ul li.active [class*=" icon-"] { color: #e41800; }
+.main_menupunkte li.inactive { opacity:0.5; z-index:10; }
+.main_menupunkte_livestand { /*color:#E41800;*/ }
+.main_menupunkte_inactive, .main_menupunkte li:hover i, .main_menupunkte li:hover a, .main_menupunkte li.active a { color:#e41800; }
+
+/** Spielbox **/
+.spielauswahl_spielbox { position:relative; float:left; margin:1%; width:23%; background-color:#f9f9f9; }
+.spielauswahl_spielbox.inactive { opacity:0.5; }
+.spielauswahl_spielbox:hover { background-color:#f2f2f2;  }
+.spielauswahl_spielbox.inactive:hover { background-color:#f2f2f2; }
+.spielauswahl_spielbox.inactive:hover .spielbox_unten { background-color:#2c2c2c; }
+/*.spielboxlive, .spielboxlive .spielbox_oben_teamlogo { border:2px solid #E41800; }*/
+.spielauswahl_spielbox:hover .spielbox_unten, .spielboxlive .spielbox_unten { background-color:#E41800; }
+.spielboxlive .spielbox_oben { color:#E41800; }
+.spielauswahl_spielbox a { display:block; height:100%; }
+.spielbox_oben { height:100px; border-bottom:1px solid #b2b2b2; font:14px 'Roboto Condensed'; color:#323A45; overflow:hidden; }
+.spielbox_oben_mitte p span.zusatz_info { display:block; font-size:15px; margin-top:-6px; }
+.spielbox_mitte { padding:10px; color:black; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+/*.ebel .spielbox_mitte, .laenderspiele .spielbox_mitte { white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }*/
+.spielbox_mitte p { color:black; font:15px 'Roboto Condensed'; margin-top:10px; margin-left:5px; }
+.spielbox_mitte span { color:black; font:15px 'Roboto Condensed'; margin-top:10px; margin-left:5px; }
+.spielbox_mitte div[class^="icon-"] { color: #323A45; display:inline-block; margin:5px 0 5px 5px; }
+.spielbox_unten { color:#fff; padding-top:7px; text-align:center; height:40px; background-color:#5f5f5f; font-size:16px; text-transform:uppercase; font-weight:bold; line-height:25px; }
+.spielbox_unten a { color:white; }
+.spielbox_oben_links { position:absolute; width:50%; height:55px; }
+.spielbox_oben_mitte { position:absolute; width:100%;	height:55px; }
+.spielbox_oben_rechts { position:absolute; right:0; width:50%; height:55px; }
+.spielbox_oben_teamlogo { margin:auto; margin-top:8px; width:44px; height:44px; }
+
+.spielbox_oben_spielstandanzeige { margin-top:5px; font-size:40px; text-align:center; font-weight:bold; }
+.spielbox_oben_teamnamen { font-size:15px; line-height:15px; text-align:center; position:relative; top:65px; opacity:0.75; }
+.spielbox_oben_teamnamen_links { width:50%; position:absolute; text-align:center; padding-left:5px; }
+.spielbox_oben_teamnamen_rechts { width:50%; right:0; position:absolute; text-align:center; padding-right:5px; }
+
+/** FOOTER **/
+.footer { background:#2c2c2c; padding:10px; color:white; text-align:right; font-size:15px; }
+.footer img { width:75px; margin-left:5px; }
+
+/** Responsive **/
+@media only screen and (min-device-width:320px) and (max-device-width:480px) {
+	html, body { -webkit-text-size-adjust:none; }
+	.spielbox_oben_teamnamen {  }
+}
+
+@media only screen and (min-width:320px) and (max-width:480px) {
+	.header_liga { width: 315px; margin-left:-157px; }
+	.header_liga .header_sp_spielbutton { width: 95px; }
+	.header_liga .header_sp_spielbutton_spielstand img { max-width: 85px!important; }
+}
+
+
+@media only screen and (min-width:1200px) {
+	body.switch-left .header_liga {margin-left: 19%!important; position:static!important; display:inline-block!important;}
+	body.switch-left .sitebar { margin-left:1240px!important; left:0!important;}
+}
+
+@media only screen and (max-width:1100px) {
+    .spielerprofil_overlay section {  width:90%; margin:0 5%; margin-top:2%;}
+	.spielbox_oben_teamnamen { font-size:13px; line-height:13px; }
+	.spielerstatistiken_live td div { display: none; }
+	.spielerstatistiken_live td p { line-height: auto; padding-left:5px; }
+	.stage_spielheader_teamlinks { left:10px; }
+	.stage_spielheader_teamrechts { right:10px; }
+	.aufstellung_spieler [class^="icon-"], .aufstellung_spieler [class*=" icon-"] { padding:0 5px; }
+	.badge { right:1px; }
+
+}
+
+@media only screen and (max-width:767px) {
+	.main, .header_logo, .header_sp, .tickertext_container, .torschuetzen_container, .torschuetzen_links, .torschuetzen_rechts, .aufstellung_teams_links, .aufstellung_teams_rechts,
+	.spielerportrait.links, .spielerportrait.rechts, .terminplan table, .-hd-util-intellitable-data table
+	{ width:100%!important; }	
+	.stage_spielheader, .header_logo_aktualisieren, .spielbox_mitte div:first-of-type, .spielbox_mitte span:first-of-type, .empty,
+	.aufstellung_teams, .mitbild.bild, .nonliveSpielplan td .fd, .spielplan_info, .aufstellung_rasen,
+	.tabelle_json tr th:nth-child(8), .tabelle_json td:nth-child(8), .tabelle_json tr th:nth-child(7), .tabelle_json td:nth-child(7), .torbilder_beschreibung, .spieldatenblatt_karte,
+	.header_sp_nextbuttonlinks, .header_sp_nextbuttonrechts, .telegramm_json, .vid_highlight, .vid_full, .buli .nonliveSpielplan tr th:nth-child(7), .buli .nonliveSpielplan tr th:nth-child(8), 
+	.tabelle_widget #standings th:nth-child(5), .tabelle_widget #standings th:nth-child(6), .tabelle_widget #standings th:nth-child(7), .tabelle_widget #standings th:nth-child(8),
+	.tabelle_widget #standings th:nth-child(9), .tabelle_widget #standings th:nth-child(10), .tabelle_widget #standings td:nth-child(5), .tabelle_widget #standings td:nth-child(6), 
+	.tabelle_widget #standings td:nth-child(7), .tabelle_widget #standings td:nth-child(8),	.tabelle_widget #standings td:nth-child(9), .tabelle_widget #standings td:nth-child(10)
+	{ display:none; }
+	.nonliveSpielplan td span.fm { display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; width:50%; }
+	.nonliveSpielplan td .wappen {float:left; }
+	.nonliveSpielplan .paging-container { padding: 0 15px!important; }
+	.galerie, .galerie-pagination, .statistik.mitbild, .torbilder_tor
+	{ width:98% }
+	.kroneheader .header_logo_img, .header_logocontainer { height:50px; }
+	.krone .kroneheader .header_logo_img { top: -5px!important; }
+	.tiny_main_nav, .tiny_game_nav, .aufstellung_flag { display:inline-block; }
+	.nat .aufstellung_flag { height:24px; margin-top:7px; }
+	.stage { width:100%; left:0; }
+    .spielbox_oben { height:90px; }
+    .spielbox_mitte { display:none; }
+    .spielbox_unten { height:25px; line-height:12px; font-size:14px; }
+	header { position:relative; }
+	.header_logo_bewerb { top:15px; font-size:17px; text-align:right; margin-right:10px; }
+    .tiny_game_nav .game_dropdown div, .tiny_main_nav .main_dropdown .live_button, .tiny_game_nav .live_button, .tiny_game_nav .header_dropdownbutton, .tiny_main_nav .live_button, 	
+	.tiny_main_nav .header_dropdownbutton { cursor:pointer; }
+	.headerfixed { position:fixed; }
+	h2 { padding:5px; }
+	.spieldatenblatt_datenbox { margin:10px; margin-left:5%; width:98%!important; height:auto; }
+	.main_container, .international .main_container { top:auto; }
+	.tickertext_zeit { width:100%;	float:none; margin-top:0; text-align:center; }
+	.tickertext_text { width:100%; border-left:0;	}
+	.spielerportrait_informationen { float:left; width:100%; }
+	.teaser .news span.additional_info { float:none; display:block; clear:both; }
+	.map, .info { width:98%; padding:0; margin:0 auto; }
+	.map img { margin:0 auto; display:block; width:60%; }
+	.tabelle_json td:nth-child(5) { padding-right:5px; }
+    .spielplan_teamheim, .hideme .aufstellung_teamlogo { display:block; }
+	.aufstellung_teamlogo { margin: 0 auto; background-size:40px 40px!important;}
+	.nat .aufstellung_teamlogo { margin: 0 auto!important; height:30px; }
+	.aufstellung_startelf>p { margin:0 auto; }
+	.badge { top:1px; }
+	.nat .header_sp_spielbutton_logorechts, .nat .header_sp_spielbutton_logolinks { height:14px!important; top:9px!important; }
+	.laenderspiele .header_sp_spielbutton_logorechts, .laenderspiele .header_sp_spielbutton_logolinks { height:14px!important; top:9px!important; }
+
+    .icon-.sorter { padding:0; }
+    .spielerstatistiken_live thead tr th { padding:0 3px; }
+    .aufstellung_spieler, .playertrainer { height:40px; line-height:30px; }
+    .zeile { padding:5px; margin:5px 0; } 
+    .spielplan_teamgast { display:inline; }
+	.nonliveSpielplan table td:nth-child(3), .nonliveSpielplan table td:nth-child(4) { min-width:80px; max-width:100px; }
+	.icehockey-schedule table td { max-width:80px; padding:18px 5px; }
+	.tabelle_widget #standings td:nth-child(3) { min-width:80px; max-width:100px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .spielplan_datum, .spielplan_uhrzeit { display:initial; font-weight:bold; }
+    .spielplan_ergebnis { min-width:50px; }
+    
+    .spielerprofil_overlay .spielerportrait_spielerimg { margin:10px auto!important; width:150px; height:200px; }   
+    .spielerprofil_overlay .spielerportrait_spielername, .spielerprofil_overlay .spielerportrait_teamname { margin:auto!important; }
+    .spielerprofil_overlay .switch_player_profile { margin:-250px 20px 270px 20px!important; }
+        
+    .footer { font-size:14px;}
+    .footer img { width:70px; }
+
+	.nonliveTorschuetzenliste td:nth-child(1), .nonliveTorschuetzenliste th:nth-child(1) { display:none; }
+	.nonliveTorschuetzenliste table tr th { text-align: left; }
+
+
+
+    /**  HEADER **/
+	.header_logo_img { width: 100px; top:10px;}
+	.header_tinynav { display: block; }
+	.header_ligacontainer { height:60px; }
+	.header_ligacontainer .header_sp_spielbutton_spielstand { margin:0 auto; }
+	.header_ligacontainer .header_liga .header_sp_spielbutton_spielstand img { max-height:35px; max-width:100px; }
+	.header_spcontainer { height: 0; display: none; overflow: hidden; z-index: 100; }
+	.header_sp ul { padding-top: 0; margin-top:-10px; }
+	.header_sp li, .universal .header_sp li { border: none; border-bottom: 1px solid #fff; border-radius: 0; width: 100%!important; }
+	 .universal .header_sp li { line-height:50px; }
+
+	.main_menupunkte { background-color: #555; z-index: 100; width: 100%; position: relative; overflow: hidden; display: none; height:0; }
+	.main_menupunkte ul { margin: 0; }
+	.main_menupunkte li { background-color:#2c2c2c; width:100%; margin:0; border:none; border-radius:0; border-bottom:1px solid white; box-shadow:none; text-align:left; line-height: 50px; height:50px; color: #FFF; list-style-type: none;  }
+	.main_menupunkte ul li [class^="icon-"], .main_menupunkte ul li [class*=" icon-"] { font-size: 17px; color:#fff; }
+	.main_menupunkte li a.tooltip { margin-left: 10px; color: #fff; line-height: 50px; font-size: 17px; height: 50px; width: auto; text-align: left; display: block;}
+	.main_menupunkte li a.tooltip:after { margin-left: -25px; visibility: visible; opacity:1; background: none; text-align: left; color: #fff; }
+	.main_menupunkte li a.tooltip:hover:before { visibility: hidden; opacity: 0; }
+	.main_menupunkte li:hover { background-color:#e41800; }
+	.main_menupunkte li a.tooltip, .main_menupunkte li a.tooltip:after, .main_menupunkte li a.tooltip span { color:#fff!important; }
+	.main_menupunkte li.active a.tooltip, .main_menupunkte li.active a.tooltip:after, .main_menupunkte li.active a.tooltip span { color:#000!important; }
+	.main_menupunkte li.active { background-color:#fff; border-left:3px solid #e41800; border-right:3px solid #e41800; color:#000!important; }
+	@-moz-keyframes blinker 	{0% { color: #fff; } 50% { color: #e41800; } 100% { color: #fff; }}
+	@-webkit-keyframes blinker 	{0% { color: #fff; } 50% { color: #e41800; } 100% { color: #fff; }}
+	@keyframes blinker 			{0% { color: #fff; } 50% { color: #e41800; } 100% { color: #fff; }}
+	.main_menupunkt_aktive { border: none!important; }
+	.header_sp_konferenzbtn { width: 100%; position: relative; border: none; border-radius:0; text-align: left; height: 50px; line-height: 50px; top: 0px;  border-bottom: 1px solid white; text-align: center; font-size: 17px; }
+	.header_sp_spielbutton { left:0; height:50px; }
+	.header_ligacontainer .header_sp_spielbutton, .header_tinynav_bewerbe.rechts .header_sp_spielbutton { height:45px; }
+	.header_sp_spielbutton_spielstand { margin:5px auto; }
+	.header_sp_spielbutton_teamlinks { bottom:5px; left:14px; }
+	.header_sp_spielbutton_teamrechts { bottom:5px; right:14px; }
+	.header_sp_spielbutton_logolinks { width:20px; height:20px; top:5px!important; left:13px; }
+	.header_sp_spielbutton_logorechts { width:20px; height:20px; top:5px!important; right:13px;  }
+
+	/** TICKERTEXT **/
+	.tickertext_text span { width: 100%; }
+	.tickertext-logo { display: none; }
+	.tickertext-logo.responsive { display:block; height: 45px; width: 100%;	position: absolute;	background-size: contain; background-repeat: no-repeat;	background-position: right top;	opacity: 0.4; right: 10px; }
+	.tickertext-logo.responsive.flagge { height: 30px; }
+
+	/** ko-Auslosung **/
+	.draw_vs_icon { display: block; position: absolute; margin-top: -30px; z-index: 100; opacity: 0.6; }
+	.draw_ko_box { height: auto; }
+
+
+	.diashow_json .buttons td { display: block;	width: auto!important; }
+
+}
+
+@media only screen and (min-width:640px) and (max-width:849px) {
+    .spielauswahl_spielbox { width:48%; }
+    .wettbox { width:48%; text-align:center; }	
+	.spielbox_oben_teamnamen {  }
+
+	.spielerstatistiken_live td div { display: none; }
+	.spielerstatistiken_live td p { line-height: auto; padding-left:5px; }
+	.spielerstatistiken_live td .additional_info, .spielerstatistiken_live th .additional_info { display: none; }
+}
+
+@media only screen and (min-width:850px) and (max-width:1023px) {
+    .spielauswahl_spielbox { width:31.1%; }    
+    .wettbox { width:31.1%; text-align:center; }
+}
+
+@media only screen and (max-width:639px) {
+    .spielauswahl_spielbox { width:98%; }    
+    .wettbox { width:98%; text-align:center; }	
+	.spielbox_oben_teamnamen {  }
+	.spielerstatistiken_live .erlittenefouls, .spielerstatistiken_live .flanken, .spielerstatistiken_live .passstatistik, .spielerstatistiken_live .zweikaempfe { display: none; }
+}
+body.switch-left .header_sp2 {
+  margin: 0 0 0 1%!important;
+}
+.olympia {
+  background: #f2f2f2;
+}
+.olympia .werbung_fullsizebanner div {
+  width: auto;
+}
+.olympia .aright {
+  text-align: right;
+}
+.olympia .aleft {
+  text-align: left;
+}
+.olympia .acenter {
+  text-align: center;
+}
+.olympia .clear-left {
+  clear: left;
+}
+.olympia .fleft {
+  float: left;
+}
+.olympia .fright {
+  float: right;
+}
+.olympia .fnone {
+  float: none!important;
+}
+.olympia .sort {
+  padding-right: 5px;
+  position: relative;
+  width: auto;
+}
+.olympia .sort span {
+  position: absolute;
+  left: -10px;
+}
+.olympia .sort span.fa-caret-up {
+  top: -3px;
+}
+.olympia .sort span.fa-caret-down {
+  bottom: -2px;
+}
+.olympia .main_container {
+  background: transparent;
+}
+.olympia .stage {
+  width: 100%!important;
+  left: 0!important;
+}
+.olympia .header_spcontainer2 {
+  position: relative;
+  height: 80px;
+  background-color: #3f3f3f;
+}
+.olympia .header_sp2 {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+.olympia .header_sp_konferenzbtn2,
+.olympia .header_sp_nextbuttonlinks2,
+.olympia .header_sp_nextbuttonrechts2 {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 120px;
+  height: 60px;
+  border: none;
+  border-radius: 0;
+  color: #FFF;
+  text-align: center;
+  line-height: 55px;
+  background-color: #2c2c2c;
+  padding-top: 2px;
+}
+.olympia .header_sp_nextbuttonlinks2,
+.olympia .header_sp_nextbuttonrechts2 {
+  background-color: #e41800;
+  width: 35px;
+  height: 35px;
+  font-size: 40px;
+  line-height: 20px;
+  top: 23px;
+}
+.olympia .header_sp_nextbuttonlinks2 {
+  left: 130px;
+}
+.olympia .header_sp_nextbuttonrechts2 {
+  left: auto;
+  right: 0;
+}
+.olympia .header_sp_nextbuttonrechts2.inactive,
+.olympia .header_sp_nextbuttonlinks2.inactive {
+  z-index: 10;
+  background-color: #a6a6a6;
+  color: #f2f2f2;
+  opacity: 0.25;
+}
+.olympia .header_sp_spielbutton_container2 {
+  left: 200px;
+  height: 60px;
+  background-color: red;
+}
+.olympia .header_sp_spielbutton2 {
+  position: relative;
+  float: left;
+  margin-right: 10px;
+  top: 10px;
+  left: 190px;
+  width: 140px;
+  height: 60px;
+  color: #FFF;
+  text-align: center;
+  background: #2c2c2c;
+  text-transform: uppercase;
+}
+.olympia .header_sp_spielbutton2:hover {
+  background: #e41800;
+}
+.olympia .header_sp_nextbuttonrechts2.inactive:hover,
+.olympia .header_sp_nextbuttonlinks2.inactive:hover {
+  background-color: #a6a6a6;
+}
+.olympia .header_sp_spielbutton2:hover .header_sp_spielbutton_spielstand2,
+.olympia .header_sp_spielbutton_spielstand2.rot:hover {
+  color: white!important;
+}
+.olympia .header_sp_spielbutton2.active {
+  background: white;
+  color: black;
+  border-left: 4px solid #e41800;
+  border-right: 4px solid #e41800;
+}
+.olympia .header_sp_spielbutton2.active:hover {
+  background: white;
+  color: black;
+  border-left: 4px solid #e41800;
+  border-right: 4px solid #e41800;
+}
+.olympia .header_sp_nextbuttonlinks2 {
+  left: 0px;
+}
+.olympia p.header_sp_spielbutton_nav2 {
+  padding-top: 20px;
+}
+.olympia .header_sp2 ul {
+  width: 90%;
+  text-align: center;
+  margin: 0 auto;
+}
+.olympia .header_sp2 li {
+  left: 0;
+  width: 19.25%;
+  margin-right: 0.9%;
+}
+.olympia .header_sp2 li:last-child {
+  margin-right: 0;
+}
+.olympia .half-width {
+  width: 49%;
+}
+.olympia .half-width h2 {
+  text-align: left !important;
+}
+.olympia .half-width .seemorebtn {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  float: left;
+  padding: 20px 0 30px 0;
+}
+.olympia .half-width .seemorebtn a {
+  display: inline-block;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  background: #e41800;
+  padding: 10px;
+}
+.olympia .half-width .seemorebtn a span {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAQAAADZc7J/AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAADdcAAA3XAUIom3gAAAAHdElNRQfgBxUQMim8k6XyAAAA+0lEQVRIx5XSOw4BURTG8RuEBI010OhswCsau7EBy1DrRefZebYSEZ3GIpBIFJ+CMOfcxzn3TjNzJv/fPA0M2aoY4YIecmzu3fjggM9aagl6WMZ/KQk+OCeIhYbggw6ecYQ96hJiLhGuYRThHnMiGwtwYuYn/DenJEIviBJTNxH+SApC+lEoMbEJ+WcVCBngxCAeoMQDpeS5lNGsu3n99tMmQ84prl/HLfEIw9hHoPkK+TiggXsolwCar+08DDTlPASocj/QIvkGBd+FfPlDl7uBNsm3odwFROU20CD5Tspt4BiXc6BC8qKc23dw+uZ7XW4DNYxxRV+bw7wB2Iqj57egYZwAAAAldEVYdGRhdGU6Y3JlYXRlADIwMTYtMDctMjFUMTY6NTA6NDErMDI6MDD8a9B+AAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE2LTA3LTIxVDE2OjUwOjQxKzAyOjAwjTZowgAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAAASUVORK5CYII=);
+  width: 15px;
+  display: inline-block;
+  height: 15px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: relative;
+  top: 1px;
+}
+.olympia .full-width {
+  width: 100%;
+}
+.olympia .full-width h2 {
+  text-align: center;
+}
+.olympia .full-width .content_container {
+  padding: 20px;
+  max-height: 100%!important;
+  clear: left;
+}
+.olympia .full-width .content_container .text-box-programm .programm div.text span.bewerb {
+  display: inline-block;
+  width: 45%;
+  vertical-align: top;
+}
+.olympia .full-width .content_container .text-box-programm .programm div.text span.phase {
+  display: inline-block;
+  width: 25%;
+  vertical-align: top;
+  margin-right: 5%;
+}
+.olympia .full-width .content_container .text-box-programm .programm div.text span.heimspieler {
+  float: none!important;
+  margin-left: 5%;
+}
+.olympia .paging-container {
+  width: 100%;
+  clear: both;
+  position: relative;
+  font-size: 14px;
+  height: 40px;
+  margin: 2% 0;
+  text-align: center;
+  display: inline-block;
+  padding: 0 20px;
+}
+.olympia .paging-container .boxarrow {
+  float: left;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 9px;
+  color: #000000;
+  opacity: 0.8;
+}
+.olympia .paging-container .boxarrow.left {
+  margin: 15px 0 0 0;
+}
+.olympia .paging-container .boxarrow.left span {
+  padding-right: 20px;
+}
+.olympia .paging-container .boxarrow.right {
+  float: right;
+  margin: 15px 0 0 0;
+}
+.olympia .paging-container .boxarrow.right span {
+  padding-left: 20px;
+}
+.olympia .paging-container .boxarrow img {
+  vertical-align: middle;
+  width: 30px;
+}
+.olympia .paging-container .boxarrow:hover {
+  opacity: 1;
+}
+.olympia section.select-wrapper {
+  width: 50%;
+  float: left;
+  padding: 0 20px;
+  margin: 15px 0;
+}
+.olympia section.select-wrapper.filter-sportart {
+  text-align: right;
+}
+.olympia section.select-wrapper.filter-sportart.single-filter {
+  text-align: left !important;
+  width: 100%;
+}
+.olympia section.select-wrapper label.custom-select {
+  position: relative;
+  display: inline-block;
+}
+.olympia section.select-wrapper .custom-select select {
+  display: inline-block;
+  border: 2px solid #bbb;
+  padding: 4px 3px 3px 5px;
+  margin: 0;
+  font: inherit;
+  outline: none;
+  line-height: 1.2;
+  background: #f8f8f8;
+  -webkit-appearance: none;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  min-width: 200px;
+  margin-left: 10px;
+}
+.olympia section.select-wrapper .custom-select:after {
+  content: "\25BC";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  font-size: 60%;
+  line-height: 30px;
+  padding: 0 7px;
+  background: #bbb;
+  color: white;
+  pointer-events: none;
+  -webkit-border-radius: 0 3px 3px 0;
+  -moz-border-radius: 0 3px 3px 0;
+  border-radius: 0 3px 3px 0;
+}
+.olympia .datum,
+.olympia .sport-art {
+  margin: 30px 0 20px 0;
+}
+.olympia .datum span,
+.olympia .sport-art span {
+  font-weight: bold;
+  font-size: 23px;
+  vertical-align: middle;
+}
+.olympia .datum span.sprite-actions-small,
+.olympia .sport-art span.sprite-actions-small {
+  margin-right: 2%;
+}
+.olympia .tages-highlights {
+  max-height: 950px;
+  overflow: auto;
+}
+.olympia .text-box-live {
+  max-height: 365px;
+}
+.olympia .tages-programm {
+  max-height: 365px;
+  overflow: auto;
+}
+.olympia .content_container {
+  width: 100%;
+  padding: 0 20px;
+}
+.olympia .content_container .text-box-programm {
+  width: 100%;
+  padding: 0px;
+  height: 100%;
+  display: block;
+  float: left;
+}
+.olympia .content_container .text-box-programm .programm {
+  width: 100%;
+  padding: 10px 20px;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+}
+.olympia .content_container .text-box-programm .programm div {
+  float: left;
+}
+.olympia .content_container .text-box-programm .programm div.text {
+  width: 75%;
+}
+.olympia .content_container .text-box-programm .programm div.text span.heimspieler {
+  float: right;
+}
+.olympia .content_container .text-box-programm .programm div.text span.heimspieler img {
+  width: 20px;
+}
+.olympia .content_container .text-box-programm .programm div.text span.heimspieler span {
+  padding: 0 10px;
+  font-weight: bold;
+}
+.olympia .content_container .text-box-programm .programm div.sportart {
+  width: 10%;
+  text-align: center;
+}
+.olympia .content_container .text-box-programm .programm div.zeit {
+  width: 15%;
+  font-weight: bold;
+  text-align: center;
+}
+.olympia .content_container .text-box-programm .programm div img.hasMedal {
+  width: 30px;
+  position: absolute;
+  right: 20px;
+  top: 0;
+}
+.olympia .content_container .text-box-programm .programm:nth-child(even) {
+  background: #f2f2f2;
+}
+.olympia .content_container .text-box-highlights,
+.olympia .content_container .text-box-live {
+  width: 100%;
+  padding: 20px;
+  height: 100%;
+  display: inline-block;
+  position: relative;
+  float: left;
+}
+.olympia .content_container .text-box-highlights div.left,
+.olympia .content_container .text-box-live div.left {
+  width: 15%;
+  float: left;
+  text-align: center;
+}
+.olympia .content_container .text-box-highlights div.right,
+.olympia .content_container .text-box-live div.right {
+  width: 85%;
+  float: right;
+  padding-left: 25px;
+  position: relative;
+}
+.olympia .content_container .text-box-highlights div.medaille,
+.olympia .content_container .text-box-live div.medaille {
+  position: absolute;
+  top: 0px;
+  right: 30px;
+}
+.olympia .content_container .text-box-highlights div.medaille.gold,
+.olympia .content_container .text-box-live div.medaille.gold {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAAA3NCSVQICAjb4U/gAAAACXBIWXMAAALzAAAC8wHS6QoqAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAY9QTFRF////gAAA/4CA//+Av0BA/0BAv0Ag32BAv0Ar6lVVuDkr41VHwj0p4FxHwTYu4FVN8cZcwTgs4FdL7rFevjct4VVL7she7slcvTot4lZK8cZdvjst41ZM7shdvzgs4lhMwDor41ZM78Zdvjgt4ldMvzgs41ZMvzos8MdewDor4ldM78devjgt4VhM78de8Mdfvzos4ldM78de0Gk+wDgs4VdM78dewDks4ldN7sdevzos4lhMvzks4ldM78devzks4ldMvzks4lZN78dewDks4ldM78devzks4ldM78de66hYvzks4ldMvzks4ldM78dewDksyUE04ldM41dMvzksvzoswTouwTsuyUI1ylo4y0M3zWI71Es/1k1B17NU2LRU2LRV2YRI2bVV2rVV2rZV27ZW3VNI3ZFL3bhW3rlX31RJ4LpY4btY4ldM4lhM471Z5XFQ5XJQ5ahT5nhR6MFb6ZFV6pxX6qBX6sNc66BY67ta68Nc7Kta7K9a7bdb7cVd7r5d7sJd7sZe7sde78dexDgb1wAAAFR0Uk5TAAICAgQECAgMDBISGRkhISQpKS4zMzw9Pj5HSkpKV1dlZXBycn9/gIWNjZOamp6nqKixsrW1wMHByMzM1tba3t7m5urt7fDz8/P19/f7+/z9/f39wPk8sAAAAsdJREFUWMO1Vvlb00AQXSiHB7fQarXcYgFptUKhHPUoFMrpfdtWaDWVYDyiVkECoX+47iZNk9ndpnz78X7a7Ox7O292MwlCGLf3IPoQQO9TiFu26MUHUGCp1clvWYT8+xfs8WtUClNOgUkqgavOBROUwoA93E/xbwKL5+9BgZX2SrRtGfLvnoNFuvIYKszUl2N105D/8DKiMEaZGC6HhigDozQfNS9AgfUuI9K5BvnzTQwB1LMJFeYa8XzDLORvdCMmRigTI3j6BmXgOpuPGuegwGYPQt0bkD/bwBFAXetQYaG5aR7y1zoRF8OUibFRysAQn4/qZ6DAk0eQP11XRQC1r0CFD8+d/OU2VBUDlIm3ToF+5IIpSuGlnT/pxketS1Dg04sKf7HFVQD1USm8qwj0ohpA97fXrC7GR7m/ff7y4/fB4fHx4cGv96+e0V2MD9Lfvv88Ktnw5+MbqovxMbH39W+Jwrc7tfLRpdUSE5GO2vj+ZImDpL8W/uBWiYutQXf+uLVaV2Upl8nkJFnVrclx1/3LKzU5m7aQlbXyvEsOfjP/EyWTdiCjnJguqtahw6yfJqUpSGYSyWpnETHW7O8QynZBUTVNVQrb5HFn3zxNPt9n7m/wlUr1FUPBzMHHFYgZ/kn++aL9/Ip54sKoQ4zHD9i229WdN0DftSUV4AiEDAO4/nkd3iEd55AxTITYfE+CRGW8VZG+hUU8L5NhwsMU8Bo7ZZ31c1Yya2TmZQoESUzF58d+E/BpqmQUZAqELQcFtkDB8hBmCkRJTOI5MDxIZBRlCsRJLGflSQG7y5FRnCmQIjF8iBpbQMMHSUapsxEQtiBcROFjFL5IwldZ+GUSfp3FG4pwSxNvqsJtXfzDIvxpE/+4in/exX8wxH9x/p9FROwnC9+oGE2P+dBpEAgl7OxEKIBOC483GI7GU6l4NBz0enir/gHGXNNryLj7SAAAAABJRU5ErkJggg==);
+  width: 30px;
+  height: 30px;
+  background-size: 100%;
+}
+.olympia .content_container .text-box-highlights div.medaille.bronze,
+.olympia .content_container .text-box-live div.medaille.bronze {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAAA3NCSVQICAjb4U/gAAAACXBIWXMAAALzAAAC8wHS6QoqAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAY9QTFRF////gAAA/4CAv0BA/0BAv0Ag32BAv0Ar6lVVuDkr41VHwj0p4FxHwTYu4FVN6pxcwTgs4FdL7pBevjct4VVL7p1e7p9cvTot4lZK7Z5dvjst41ZM7p9dvzgs4lhMwDor41ZM7Z1dvjgt4ldMvzgs41ZMvzos7p1ewDor4ldM7p5evjgt4VhM7Z1e7Z1dvzos4ldM7p1ezlo+wDgs4VdM7J1dwDks4ldN7Z1dvzos4lhMvzks4ldM7Z1evzks4ldMvzks4lZN7J1dwDks4ldM7Z1evzks4ldM7Z1d6olYvzks4ldMvzks4ldM7Z1dwDksyUE04ldM41dMvzksvzoswTouwTsuyUI1ylE4y0M3zFY61Es/1Y1U1k1B1o5U145V2G9H2I9V2ZBV25FW3HdK3JJX3VNI3pNX31RJ35NY35RY4ZVY4ZVZ4ldM4lhM44dS5WdQ5WhQ5WtR5pha6HxV6Jpb6YJX6YRW6YVX6ZVZ6Zpb6oxZ645Z65Nb65tc65xc7Jdc7Jpc7Jxd7J1d7Z1dcKE25AAAAFN0Uk5TAAICBAQICAwMEhIZGSEhJCkpLjMzPD0+PkdKSkpXV2VlcHJyf3+AhY2Nk5qanqeoqLGytbXAwcHIzMzW1tre3ubm6u3t8PPz8/X39/v7/P39/f3NU0orAAACz0lEQVRYw7VW+VsaMRCNePTwrkJLi3ctaoWWKooHPVCUetD7tmuXLbUc9trSQytW4A8vSRbYnSQsfvn6fspm8t7Om2QnixDGzX2IQQQw8ATihil6/h4UWO2w8ttXIP/uOXP8CpPCrFVghkngsnXBNKMwbA4PMfzrwOLZO1BgvasW7VyD/NtnYJEuPYIK845KrGkO8h9cRAwmGRNjldAoY2CC5aO2ZSiw2UsjPRuQv9TKEUD921BhsQXPNy9A/lYf4mKcMTGOp68xBq7y+ahlEQps9yPUtwX5C80CAdS7CRWW21qXIH+jBwkxxpiYnGAMjIr5yDEPBR4/hPy5pjoCqGsdKnx4ZuWvdaK6GGZMvLEKDCEbzDIKL8z8GTs+6liFAh+f1/gr7bYCaJBJ4W1NYAA1ALa/veJ1MTEq/e3Tl++/Do9OTo4Of757+ZTtYmKQ/vbtx9+SCb/fv2a6mBjT+1//lBh8vtUoH124X+Ii0N0Y3x0tCRB1N8IfiZeEiI/Y86eqq4t6SlMVRdVSerE6OWX7/srK47SyU4WSPq7M2+TgNvIvZk10IpE1sojXrUO3Ub9jbYeBZiQRrbcXAbrmQCWU3WRGz+f1THKXPKoHxm6K+S7j/ZSfqVU/QxWMHFxCgRD1T/JP5Mz7l0sQF7QOIRHfQxdn8dq9gvUEFPbwbJY+eAQCPmoA1z9RgGeogHNQqAmfoCdHSDSNX5VjT2EOz6fJMOLgCjhpBRRr/ayVVGgVnFwBL4npeP/4XwLeTZ2MvFwBP4mlyquSfIFkOZQiIz9XIEhimsgB9aCRUZArECYxtZonA+xOJaMwVyBGYriGeb5AHleRjGL/R0DagnQRpbdR+iBJH2Xpj0n6c5ZvKNItTb6pSrd1+YtF+mqTv1zlr3f5Hwz5X5zyXgTkfrLwiQqx9JALnQYeX8TMjvg86LRwOL3+YDgWCwf9XqdDtOof+9XNl9hJVB4AAAAASUVORK5CYII=);
+  width: 30px;
+  height: 30px;
+  background-size: 100%;
+}
+.olympia .content_container .text-box-highlights div.medaille.silber,
+.olympia .content_container .text-box-live div.medaille.silber {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAAA3NCSVQICAjb4U/gAAAACXBIWXMAAALzAAAC8wHS6QoqAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAYxQTFRF////gAAA/4CA////v0BA/0BAv0Ag32BAv0Ar6lVVuDkr41VHwj0p4FxHwTYu4FVN4+rqwTgs4FdL6cjIvjct4VVL5ubm5ubmvTot4lZK4ubmvjst41ZM4+fnvzgs4lhMwDor41ZM5Obmvjgt4ldMvzgs41ZMvzos5ObmwDor4ldM4+fnvjgt4VhM5Ofn5Ofnvzos4ldM5Ofny3RtwDgs4VdM5OfnwDks4ldN5Ofnvzos4lhMvzks4ldM5Obmvzks4ldMvzks4lZN5OfnwDks4ldM5Ofnvzks4ldM5Ofn5MC8vzks4ldMvzks4ldM5OfnwDksyUE04ldM41dMvzksvzotwTouwTsuyGJYyUI1ymtiy0M3zc/PztDQz9HR0NLS0dPT0tXV09XV1Es/1JWP1NbW1djY1k1B1qWg1tnZ2Nvb2dvb3MG/3VNI3eDg31RJ3+Li4OPj4dnY4ldM4lhN4nlw4nlx4uXl44F546Kd47Cs47Wx47Wy4+bm5MPB5MjG5NLR5Nva5ODg5Ofn89QC+gAAAFR0Uk5TAAICAgQECAgMDBISGRkhISQpKS4zMzw9Pj5HSkpKV1dlZXBycn9/gIWNjZOamp6nqKixsrW1wMHByMzM1tba3t7m5urt7fDz8/P19/f7+/z9/f39wPk8sAAAAspJREFUWMO1Vvlf0zAUD4zDg1vYdDpucYBsOmEwjnkMBpNj3ielYzq0m9Yhar0KyP5xTdJ17UuyjU8+fn9K8/L99n1f0pcihHHzAGIAAfQ/gbjhiJ6/BwVW2t38tmXIv3vOGb/CpDDjFphmErjsXjDFKAw5w4MM/zqwePYOFFjrrEQ7ViH/9hlYpEuPoMJcYznWMAv5Dy4iBhOMidFyaIQxMM7yUesSFNjooZHudchfbOEIoL4tqLDQjOeb5iF/sxdxMcaYGMPT1xgDV/l81LwABbb6EOrdhPz5JoEA6tmACkutLYuQv96NhBhlTEyMMwZGxHzUOAcFHj+E/NmGKgKocw0qfHzm5q92oKoYYky8cQsMohqYYRReOvnTtfiofQUKfHpe4S+31RRAA0wK7yoC/agOsP3tNa+LiVHub1++/vh9eHxycnz46+2Lp2wXE4P0t+8//5Qc+Pz+FdPFxJg6+HZUYvDhVr18dOF+iYtIV318f7IkQNJfD384XRIiPVybP2mvNnUtqyqKmtV0056crPn+8kpDU7ZtKJpRnq+Rg9/K3yw46ESiYGWRrlqHLqt+xu42g10riWS1vYjQNfsqoezk8rph6PncDnlU963dFPN91vspP1+pfp4qWDn4hAIx6p/knyk696+YIS5oHWIifoAuLuC1e6b7BJh7eLZAHwICgRA1gOufMeEZMnEOCjUR4vM9CRLV8KuK7Cks4nmNDBMeroCXvklx189dSYVm5uUKBElMx/vH/xLwbupkFOQKhG0HOb5AzvYQ5gpESSwrckA9ZMkoyhWIk5hq58kAu1PJKM4VSJEYrqHBFzBwFcko9X8EpC1IF1F6G6UPkvRRlv6YpD9n+YYi3dLkm6p0W5e/WKSvNvnLVf56l//BkP/F+bcXEbmfLHyiYiw95kOnQSCUcLIToQA6LTzeYDgaT6Xi0XDQ6xGt+gsQJdHVshYNhAAAAABJRU5ErkJggg==);
+  width: 30px;
+  height: 30px;
+  background-size: 100%;
+}
+.olympia .content_container .text-box-highlights div.text p.title,
+.olympia .content_container .text-box-live div.text p.title {
+  font-weight: bold;
+}
+.olympia .content_container .text-box-highlights:nth-child(even),
+.olympia .content_container .text-box-live:nth-child(even) {
+  background: #f2f2f2;
+}
+.olympia .content_container .text-box-ergebnisse {
+  width: 100%;
+  padding: 0px;
+  height: 100%;
+  display: block;
+}
+.olympia .content_container .text-box-ergebnisse .ergebnis {
+  padding: 20px;
+  background: #fff;
+}
+.olympia .content_container .text-box-ergebnisse .ergebnis:nth-child(even) {
+  background: #f2f2f2;
+}
+.olympia .content_container .text-box-ergebnisse .sport-kategorie {
+  width: 100%;
+  display: inline-block;
+  font-weight: bold;
+}
+.olympia .content_container .text-box-ergebnisse .sport-kategorie div {
+  float: left;
+}
+.olympia .content_container .text-box-ergebnisse .sport-kategorie div.kategorie {
+  margin-left: 5%;
+  padding-top: 10px;
+}
+.olympia .content_container .text-box-ergebnisse .ergebnisse {
+  width: 100%;
+}
+.olympia .content_container .text-box-ergebnisse .ergebnisse table {
+  width: 100%;
+  text-align: center;
+}
+.olympia .content_container .text-box-ergebnisse .ergebnisse table tbody {
+  width: 40%;
+  display: inline-table;
+}
+.olympia .content_container .text-box-ergebnisse .ergebnisse table tbody tr {
+  padding: 5px 10px;
+}
+.olympia .content_container .text-box-ergebnisse .ergebnisse table tbody tr td {
+  vertical-align: middle;
+  padding: 5px 0;
+}
+.olympia .content_container .text-box-ergebnisse .ergebnisse table tbody tr td.platzierung span.medaille {
+  display: inline-block;
+}
+.olympia .content_container .text-box-ergebnisse .ergebnisse table tbody tr td.platzierung span.medaille.gold {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAAA3NCSVQICAjb4U/gAAAACXBIWXMAAALzAAAC8wHS6QoqAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAY9QTFRF////gAAA/4CA//+Av0BA/0BAv0Ag32BAv0Ar6lVVuDkr41VHwj0p4FxHwTYu4FVN8cZcwTgs4FdL7rFevjct4VVL7she7slcvTot4lZK8cZdvjst41ZM7shdvzgs4lhMwDor41ZM78Zdvjgt4ldMvzgs41ZMvzos8MdewDor4ldM78devjgt4VhM78de8Mdfvzos4ldM78de0Gk+wDgs4VdM78dewDks4ldN7sdevzos4lhMvzks4ldM78devzks4ldMvzks4lZN78dewDks4ldM78devzks4ldM78de66hYvzks4ldMvzks4ldM78dewDksyUE04ldM41dMvzksvzoswTouwTsuyUI1ylo4y0M3zWI71Es/1k1B17NU2LRU2LRV2YRI2bVV2rVV2rZV27ZW3VNI3ZFL3bhW3rlX31RJ4LpY4btY4ldM4lhM471Z5XFQ5XJQ5ahT5nhR6MFb6ZFV6pxX6qBX6sNc66BY67ta68Nc7Kta7K9a7bdb7cVd7r5d7sJd7sZe7sde78dexDgb1wAAAFR0Uk5TAAICAgQECAgMDBISGRkhISQpKS4zMzw9Pj5HSkpKV1dlZXBycn9/gIWNjZOamp6nqKixsrW1wMHByMzM1tba3t7m5urt7fDz8/P19/f7+/z9/f39wPk8sAAAAsdJREFUWMO1Vvlb00AQXSiHB7fQarXcYgFptUKhHPUoFMrpfdtWaDWVYDyiVkECoX+47iZNk9ndpnz78X7a7Ox7O292MwlCGLf3IPoQQO9TiFu26MUHUGCp1clvWYT8+xfs8WtUClNOgUkqgavOBROUwoA93E/xbwKL5+9BgZX2SrRtGfLvnoNFuvIYKszUl2N105D/8DKiMEaZGC6HhigDozQfNS9AgfUuI9K5BvnzTQwB1LMJFeYa8XzDLORvdCMmRigTI3j6BmXgOpuPGuegwGYPQt0bkD/bwBFAXetQYaG5aR7y1zoRF8OUibFRysAQn4/qZ6DAk0eQP11XRQC1r0CFD8+d/OU2VBUDlIm3ToF+5IIpSuGlnT/pxketS1Dg04sKf7HFVQD1USm8qwj0ohpA97fXrC7GR7m/ff7y4/fB4fHx4cGv96+e0V2MD9Lfvv88Ktnw5+MbqovxMbH39W+Jwrc7tfLRpdUSE5GO2vj+ZImDpL8W/uBWiYutQXf+uLVaV2Upl8nkJFnVrclx1/3LKzU5m7aQlbXyvEsOfjP/EyWTdiCjnJguqtahw6yfJqUpSGYSyWpnETHW7O8QynZBUTVNVQrb5HFn3zxNPt9n7m/wlUr1FUPBzMHHFYgZ/kn++aL9/Ip54sKoQ4zHD9i229WdN0DftSUV4AiEDAO4/nkd3iEd55AxTITYfE+CRGW8VZG+hUU8L5NhwsMU8Bo7ZZ31c1Yya2TmZQoESUzF58d+E/BpqmQUZAqELQcFtkDB8hBmCkRJTOI5MDxIZBRlCsRJLGflSQG7y5FRnCmQIjF8iBpbQMMHSUapsxEQtiBcROFjFL5IwldZ+GUSfp3FG4pwSxNvqsJtXfzDIvxpE/+4in/exX8wxH9x/p9FROwnC9+oGE2P+dBpEAgl7OxEKIBOC483GI7GU6l4NBz0enir/gHGXNNryLj7SAAAAABJRU5ErkJggg==);
+  width: 25px;
+  height: 25px;
+  background-size: 100%;
+}
+.olympia .content_container .text-box-ergebnisse .ergebnisse table tbody tr td.platzierung span.medaille.bronze {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAAA3NCSVQICAjb4U/gAAAACXBIWXMAAALzAAAC8wHS6QoqAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAY9QTFRF////gAAA/4CAv0BA/0BAv0Ag32BAv0Ar6lVVuDkr41VHwj0p4FxHwTYu4FVN6pxcwTgs4FdL7pBevjct4VVL7p1e7p9cvTot4lZK7Z5dvjst41ZM7p9dvzgs4lhMwDor41ZM7Z1dvjgt4ldMvzgs41ZMvzos7p1ewDor4ldM7p5evjgt4VhM7Z1e7Z1dvzos4ldM7p1ezlo+wDgs4VdM7J1dwDks4ldN7Z1dvzos4lhMvzks4ldM7Z1evzks4ldMvzks4lZN7J1dwDks4ldM7Z1evzks4ldM7Z1d6olYvzks4ldMvzks4ldM7Z1dwDksyUE04ldM41dMvzksvzoswTouwTsuyUI1ylE4y0M3zFY61Es/1Y1U1k1B1o5U145V2G9H2I9V2ZBV25FW3HdK3JJX3VNI3pNX31RJ35NY35RY4ZVY4ZVZ4ldM4lhM44dS5WdQ5WhQ5WtR5pha6HxV6Jpb6YJX6YRW6YVX6ZVZ6Zpb6oxZ645Z65Nb65tc65xc7Jdc7Jpc7Jxd7J1d7Z1dcKE25AAAAFN0Uk5TAAICBAQICAwMEhIZGSEhJCkpLjMzPD0+PkdKSkpXV2VlcHJyf3+AhY2Nk5qanqeoqLGytbXAwcHIzMzW1tre3ubm6u3t8PPz8/X39/v7/P39/f3NU0orAAACz0lEQVRYw7VW+VsaMRCNePTwrkJLi3ctaoWWKooHPVCUetD7tmuXLbUc9trSQytW4A8vSRbYnSQsfvn6fspm8t7Om2QnixDGzX2IQQQw8ATihil6/h4UWO2w8ttXIP/uOXP8CpPCrFVghkngsnXBNKMwbA4PMfzrwOLZO1BgvasW7VyD/NtnYJEuPYIK845KrGkO8h9cRAwmGRNjldAoY2CC5aO2ZSiw2UsjPRuQv9TKEUD921BhsQXPNy9A/lYf4mKcMTGOp68xBq7y+ahlEQps9yPUtwX5C80CAdS7CRWW21qXIH+jBwkxxpiYnGAMjIr5yDEPBR4/hPy5pjoCqGsdKnx4ZuWvdaK6GGZMvLEKDCEbzDIKL8z8GTs+6liFAh+f1/gr7bYCaJBJ4W1NYAA1ALa/veJ1MTEq/e3Tl++/Do9OTo4Of757+ZTtYmKQ/vbtx9+SCb/fv2a6mBjT+1//lBh8vtUoH124X+Ii0N0Y3x0tCRB1N8IfiZeEiI/Y86eqq4t6SlMVRdVSerE6OWX7/srK47SyU4WSPq7M2+TgNvIvZk10IpE1sojXrUO3Ub9jbYeBZiQRrbcXAbrmQCWU3WRGz+f1THKXPKoHxm6K+S7j/ZSfqVU/QxWMHFxCgRD1T/JP5Mz7l0sQF7QOIRHfQxdn8dq9gvUEFPbwbJY+eAQCPmoA1z9RgGeogHNQqAmfoCdHSDSNX5VjT2EOz6fJMOLgCjhpBRRr/ayVVGgVnFwBL4npeP/4XwLeTZ2MvFwBP4mlyquSfIFkOZQiIz9XIEhimsgB9aCRUZArECYxtZonA+xOJaMwVyBGYriGeb5AHleRjGL/R0DagnQRpbdR+iBJH2Xpj0n6c5ZvKNItTb6pSrd1+YtF+mqTv1zlr3f5Hwz5X5zyXgTkfrLwiQqx9JALnQYeX8TMjvg86LRwOL3+YDgWCwf9XqdDtOof+9XNl9hJVB4AAAAASUVORK5CYII=);
+  width: 25px;
+  height: 25px;
+  background-size: 100%;
+}
+.olympia .content_container .text-box-ergebnisse .ergebnisse table tbody tr td.platzierung span.medaille.silber {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAAA3NCSVQICAjb4U/gAAAACXBIWXMAAALzAAAC8wHS6QoqAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAYxQTFRF////gAAA/4CA////v0BA/0BAv0Ag32BAv0Ar6lVVuDkr41VHwj0p4FxHwTYu4FVN4+rqwTgs4FdL6cjIvjct4VVL5ubm5ubmvTot4lZK4ubmvjst41ZM4+fnvzgs4lhMwDor41ZM5Obmvjgt4ldMvzgs41ZMvzos5ObmwDor4ldM4+fnvjgt4VhM5Ofn5Ofnvzos4ldM5Ofny3RtwDgs4VdM5OfnwDks4ldN5Ofnvzos4lhMvzks4ldM5Obmvzks4ldMvzks4lZN5OfnwDks4ldM5Ofnvzks4ldM5Ofn5MC8vzks4ldMvzks4ldM5OfnwDksyUE04ldM41dMvzksvzotwTouwTsuyGJYyUI1ymtiy0M3zc/PztDQz9HR0NLS0dPT0tXV09XV1Es/1JWP1NbW1djY1k1B1qWg1tnZ2Nvb2dvb3MG/3VNI3eDg31RJ3+Li4OPj4dnY4ldM4lhN4nlw4nlx4uXl44F546Kd47Cs47Wx47Wy4+bm5MPB5MjG5NLR5Nva5ODg5Ofn89QC+gAAAFR0Uk5TAAICAgQECAgMDBISGRkhISQpKS4zMzw9Pj5HSkpKV1dlZXBycn9/gIWNjZOamp6nqKixsrW1wMHByMzM1tba3t7m5urt7fDz8/P19/f7+/z9/f39wPk8sAAAAspJREFUWMO1Vvlf0zAUD4zDg1vYdDpucYBsOmEwjnkMBpNj3ielYzq0m9Yhar0KyP5xTdJ17UuyjU8+fn9K8/L99n1f0pcihHHzAGIAAfQ/gbjhiJ6/BwVW2t38tmXIv3vOGb/CpDDjFphmErjsXjDFKAw5w4MM/zqwePYOFFjrrEQ7ViH/9hlYpEuPoMJcYznWMAv5Dy4iBhOMidFyaIQxMM7yUesSFNjooZHudchfbOEIoL4tqLDQjOeb5iF/sxdxMcaYGMPT1xgDV/l81LwABbb6EOrdhPz5JoEA6tmACkutLYuQv96NhBhlTEyMMwZGxHzUOAcFHj+E/NmGKgKocw0qfHzm5q92oKoYYky8cQsMohqYYRReOvnTtfiofQUKfHpe4S+31RRAA0wK7yoC/agOsP3tNa+LiVHub1++/vh9eHxycnz46+2Lp2wXE4P0t+8//5Qc+Pz+FdPFxJg6+HZUYvDhVr18dOF+iYtIV318f7IkQNJfD384XRIiPVybP2mvNnUtqyqKmtV0056crPn+8kpDU7ZtKJpRnq+Rg9/K3yw46ESiYGWRrlqHLqt+xu42g10riWS1vYjQNfsqoezk8rph6PncDnlU963dFPN91vspP1+pfp4qWDn4hAIx6p/knyk696+YIS5oHWIifoAuLuC1e6b7BJh7eLZAHwICgRA1gOufMeEZMnEOCjUR4vM9CRLV8KuK7Cks4nmNDBMeroCXvklx189dSYVm5uUKBElMx/vH/xLwbupkFOQKhG0HOb5AzvYQ5gpESSwrckA9ZMkoyhWIk5hq58kAu1PJKM4VSJEYrqHBFzBwFcko9X8EpC1IF1F6G6UPkvRRlv6YpD9n+YYi3dLkm6p0W5e/WKSvNvnLVf56l//BkP/F+bcXEbmfLHyiYiw95kOnQSCUcLIToQA6LTzeYDgaT6Xi0XDQ6xGt+gsQJdHVshYNhAAAAABJRU5ErkJggg==);
+  width: 25px;
+  height: 25px;
+  background-size: 100%;
+}
+.olympia .content_container .text-box-ergebnisse .ergebnisse table tbody tr td.nation {
+  text-align: right;
+}
+.olympia .content_container .text-box-ergebnisse .ergebnisse table tbody tr td.nation img {
+  width: 25px;
+}
+.olympia .content_container .text-box-ergebnisse .ergebnisse table tbody tr.bronze td {
+  border-bottom: 1px solid #ccc;
+}
+.olympia .content_container .text-box-medaillenspiegel {
+  width: 100%;
+  padding: 0px;
+  height: 100%;
+  display: block;
+}
+.olympia .content_container .text-box-medaillenspiegel .liste-nationen {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+.olympia .content_container .text-box-medaillenspiegel table.table-nationen {
+  width: 100%;
+  max-width: 800px;
+  text-align: center;
+  margin: 0 auto;
+}
+.olympia .content_container .text-box-medaillenspiegel table thead {
+  background: #ccc;
+}
+.olympia .content_container .text-box-medaillenspiegel table thead th {
+  padding: 10px 0;
+  font-weight: bold;
+}
+.olympia .content_container .text-box-medaillenspiegel table thead th.gold,
+.olympia .content_container .text-box-medaillenspiegel table thead th.silber,
+.olympia .content_container .text-box-medaillenspiegel table thead th.bronze,
+.olympia .content_container .text-box-medaillenspiegel table thead th.gesamt {
+  text-align: center;
+}
+.olympia .content_container .text-box-medaillenspiegel table thead th.flagge {
+  padding-left: 20px;
+}
+.olympia .content_container .text-box-medaillenspiegel table tbody tr td {
+  vertical-align: middle;
+  padding: 10px 0;
+  border-top: 1px solid #e6e6e6;
+}
+.olympia .content_container .text-box-medaillenspiegel table tbody tr td.gold,
+.olympia .content_container .text-box-medaillenspiegel table tbody tr td.silber,
+.olympia .content_container .text-box-medaillenspiegel table tbody tr td.bronze,
+.olympia .content_container .text-box-medaillenspiegel table tbody tr td.gesamt {
+  text-align: center;
+}
+.olympia .content_container .text-box-medaillenspiegel table tbody tr td.flagge {
+  padding-left: 20px;
+}
+.olympia .content_container .text-box-medaillenspiegel table tbody tr td.flagge img {
+  width: 35px;
+}
+.olympia .content_container .text-box-medaillenspiegel table tbody tr.isClickableNation {
+  cursor: pointer;
+}
+.olympia .content_container .text-box-medaillenspiegel table tbody tr.spieler-details td {
+  border-top: none;
+}
+.olympia .content_container .text-box-medaillenspiegel table tbody tr.spieler-details td.flagge {
+  text-align: right;
+  padding: 0 40px 0 0;
+}
+.olympia .content_container .text-box-medaillenspiegel table tbody tr.spieler-details td.flagge img {
+  width: 30px;
+}
+.olympia .content_container .text-box-medaillenspiegel table tbody tr.spieler-details:nth-child(even) {
+  background: #f2f2f2;
+}
+.olympia .content_container .text-box-medaillenspiegel table tbody tr:last-child td {
+  border-bottom: 1px solid #e6e6e6;
+}
+.olympia .content_container .text-box-medaillenspiegel .select-view {
+  display: inline-block;
+  width: 100%;
+}
+.olympia .content_container .text-box-medaillenspiegel .select-view div.nationen,
+.olympia .content_container .text-box-medaillenspiegel .select-view div.spieler {
+  float: right;
+  margin: 5px 0 5px 5px;
+}
+.olympia .content_container .text-box-medaillenspiegel .select-view div.nationen a,
+.olympia .content_container .text-box-medaillenspiegel .select-view div.spieler a {
+  background: #f2f2f2;
+  color: #333;
+  padding: 5px 10px;
+}
+.olympia .content_container .text-box-medaillenspiegel .select-view div.nationen a.active,
+.olympia .content_container .text-box-medaillenspiegel .select-view div.spieler a.active,
+.olympia .content_container .text-box-medaillenspiegel .select-view div.nationen a:hover,
+.olympia .content_container .text-box-medaillenspiegel .select-view div.spieler a:hover {
+  background: #ccc;
+}
+.olympia .content_container .text-box-medaillenspiegel .select-view div.view-wrapper {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+.sprite-actions-big {
+  background-image: url(.././img/b956b421db1b1bf82b3db6da8e3416b7.png);
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+}
+.sprite-actions-big.ceremony {
+  background-position: 0px 0px;
+}
+.sprite-actions-big.bogenschiessen {
+  background-position: 0px -150px;
+}
+.sprite-actions-big.turnen {
+  background-position: 0px -300px;
+}
+.sprite-actions-big.leichtathletik {
+  background-position: 0px -450px;
+}
+.sprite-actions-big.badminton {
+  background-position: 0px -600px;
+}
+.sprite-actions-big.basketball {
+  background-position: 0px -750px;
+}
+.sprite-actions-big.beachvolleyball {
+  background-position: 0px -900px;
+}
+.sprite-actions-big.boxen {
+  background-position: -150px 0px;
+}
+.sprite-actions-big.kanu {
+  background-position: -150px -150px;
+}
+.sprite-actions-big.radsport {
+  background-position: -150px -300px;
+}
+.sprite-actions-big.schwimmen {
+  background-position: -150px -450px;
+}
+.sprite-actions-big.pferdesport {
+  background-position: -150px -600px;
+}
+.sprite-actions-big.fechten {
+  background-position: -150px -750px;
+}
+.sprite-actions-big.fussball {
+  background-position: -150px -900px;
+}
+.sprite-actions-big.golf {
+  background-position: -300px 0px;
+}
+.sprite-actions-big.handball {
+  background-position: -300px -150px;
+}
+.sprite-actions-big.hockey {
+  background-position: -300px -300px;
+}
+.sprite-actions-big.judo {
+  background-position: -300px -450px;
+}
+.sprite-actions-big.modernerfuenfkampf {
+  background-position: -300px -600px;
+}
+.sprite-actions-big.rudern {
+  background-position: -300px -750px;
+}
+.sprite-actions-big.rugby {
+  background-position: -300px -900px;
+}
+.sprite-actions-big.segeln {
+  background-position: -450px 0px;
+}
+.sprite-actions-big.schiessen {
+  background-position: -450px -150px;
+}
+.sprite-actions-big.tischtennis {
+  background-position: -450px -300px;
+}
+.sprite-actions-big.taekwondo {
+  background-position: -450px -450px;
+}
+.sprite-actions-big.tennis {
+  background-position: -450px -600px;
+}
+.sprite-actions-big.triathlon {
+  background-position: -450px -750px;
+}
+.sprite-actions-big.volleyball {
+  background-position: -450px -900px;
+}
+.sprite-actions-big.wasserball {
+  background-position: -600px 0px;
+}
+.sprite-actions-big.gewichtheben {
+  background-position: -600px -150px;
+}
+.sprite-actions-big.ringen {
+  background-position: -600px -300px;
+}
+.sprite-actions-big.turmspringen {
+  background-position: -600px -450px;
+}
+.sprite-actions-small {
+  background-image: url(.././img/dd5fdde08ee8dc0c37a07c6ae40c1726.png);
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+}
+.sprite-actions-small.ceremony {
+  background-position: 0px 0px;
+}
+.sprite-actions-small.bogenschiessen {
+  background-position: 0px -80px;
+}
+.sprite-actions-small.turnen {
+  background-position: 0px -150px;
+}
+.sprite-actions-small.leichtathletik {
+  background-position: 0px -225px;
+}
+.sprite-actions-small.badminton {
+  background-position: 0px -300px;
+}
+.sprite-actions-small.basketball {
+  background-position: 0px -375px;
+}
+.sprite-actions-small.beachvolleyball {
+  background-position: 0px -450px;
+}
+.sprite-actions-small.boxen {
+  background-position: -75px 0px;
+}
+.sprite-actions-small.kanu {
+  background-position: -75px -80px;
+}
+.sprite-actions-small.radsport {
+  background-position: -75px -150px;
+}
+.sprite-actions-small.schwimmen {
+  background-position: -75px -225px;
+}
+.sprite-actions-small.pferdesport {
+  background-position: -75px -300px;
+}
+.sprite-actions-small.fechten {
+  background-position: -75px -375px;
+}
+.sprite-actions-small.fussball {
+  background-position: -75px -450px;
+}
+.sprite-actions-small.golf {
+  background-position: -150px 0px;
+}
+.sprite-actions-small.handball {
+  background-position: -150px -80px;
+}
+.sprite-actions-small.hockey {
+  background-position: -150px -150px;
+}
+.sprite-actions-small.judo {
+  background-position: -150px -225px;
+}
+.sprite-actions-small.modernerfuenfkampf {
+  background-position: -150px -300px;
+}
+.sprite-actions-small.rudern {
+  background-position: -150px -375px;
+}
+.sprite-actions-small.rugby {
+  background-position: -150px -450px;
+}
+.sprite-actions-small.segeln {
+  background-position: -225px 0px;
+}
+.sprite-actions-small.schiessen {
+  background-position: -225px -80px;
+}
+.sprite-actions-small.tischtennis {
+  background-position: -225px -150px;
+}
+.sprite-actions-small.taekwondo {
+  background-position: -225px -2250px;
+}
+.sprite-actions-small.tennis {
+  background-position: -225px -300px;
+}
+.sprite-actions-small.triathlon {
+  background-position: -225px -375px;
+}
+.sprite-actions-small.volleyball {
+  background-position: -225px -450px;
+}
+.sprite-actions-small.wasserball {
+  background-position: -300px 0px;
+}
+.sprite-actions-small.gewichtheben {
+  background-position: -300px -80px;
+}
+.sprite-actions-small.ringen {
+  background-position: -300px -150px;
+}
+.sprite-actions-small.turmspringen {
+  background-position: -300px -225px;
+}
+.sprite-actions-mini {
+  background-image: url(.././img/29b06f9a266e3b1301f3f2fee6e2a694.png);
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+}
+.sprite-actions-mini.ceremony {
+  background-position: 0px 0px;
+}
+.sprite-actions-mini.bogenschiessen {
+  background-position: 0px -40px;
+}
+.sprite-actions-mini.turnen {
+  background-position: 0px -80px;
+}
+.sprite-actions-mini.leichtathletik {
+  background-position: 0px -120px;
+}
+.sprite-actions-mini.badminton {
+  background-position: 0px -160px;
+}
+.sprite-actions-mini.basketball {
+  background-position: 0px -200px;
+}
+.sprite-actions-mini.beachvolleyball {
+  background-position: 0px -870px;
+}
+.sprite-actions-mini.boxen {
+  background-position: -50px 0px;
+}
+.sprite-actions-mini.kanu {
+  background-position: -50px -40px;
+}
+.sprite-actions-mini.radsport {
+  background-position: -50px -80px;
+}
+.sprite-actions-mini.schwimmen {
+  background-position: -50px -120px;
+}
+.sprite-actions-mini.pferdesport {
+  background-position: -50px -160px;
+}
+.sprite-actions-mini.fechten {
+  background-position: -50px -200px;
+}
+.sprite-actions-mini.fussball {
+  background-position: -50px -240px;
+}
+.sprite-actions-mini.golf {
+  background-position: 0px -280px;
+}
+.sprite-actions-mini.handball {
+  background-position: 0px -320px;
+}
+.sprite-actions-mini.hockey {
+  background-position: 0px -360px;
+}
+.sprite-actions-mini.judo {
+  background-position: 0px -400px;
+}
+.sprite-actions-mini.modernerfuenfkampf {
+  background-position: 0px -440px;
+}
+.sprite-actions-mini.rudern {
+  background-position: 0px -480px;
+}
+.sprite-actions-mini.rugby {
+  background-position: 0px -530px;
+}
+.sprite-actions-mini.segeln {
+  background-position: -50px -280px;
+}
+.sprite-actions-mini.schiessen {
+  background-position: -50px -320px;
+}
+.sprite-actions-mini.tischtennis {
+  background-position: -50px -360px;
+}
+.sprite-actions-mini.taekwondo {
+  background-position: -50px -400px;
+}
+.sprite-actions-mini.tennis {
+  background-position: -50px -440px;
+}
+.sprite-actions-mini.triathlon {
+  background-position: -50px -480px;
+}
+.sprite-actions-mini.volleyball {
+  background-position: -50px -520px;
+}
+.sprite-actions-mini.wasserball {
+  background-position: 0px -570px;
+}
+.sprite-actions-mini.gewichtheben {
+  background-position: -50px -560px;
+}
+.sprite-actions-mini.ringen {
+  background-position: 0px -600px;
+}
+.sprite-actions-mini.turmspringen {
+  background-position: -50px -600px;
+}
+.ortszeit-wahl {
+  float: left;
+  width: 33%;
+  margin: 15px 0;
+}
+.ortszeit-wahl .uhrzeit {
+  text-align: right;
+  padding: 5px 10px 5px 60px;
+  display: inline-block;
+}
+.ortszeit-wahl .onoffswitch {
+  position: relative;
+  width: 174px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
+}
+.ortszeit-wahl .onoffswitch-checkbox {
+  display: none;
+}
+.ortszeit-wahl .onoffswitch-label {
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+  border: 2px solid #CCCCCC;
+  border-radius: 20px;
+  position: relative;
+}
+.ortszeit-wahl .onoffswitch-inner {
+  display: block;
+  width: 200%;
+  margin-left: -100%;
+  transition: margin 0.3s ease-in 0s;
+}
+.ortszeit-wahl .onoffswitch-inner:before,
+.ortszeit-wahl .onoffswitch-inner:after {
+  display: block;
+  float: left;
+  width: 50%;
+  height: 30px;
+  padding: 0;
+  line-height: 30px;
+  font-size: 15px;
+  color: white;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  box-sizing: border-box;
+}
+.ortszeit-wahl .onoffswitch-inner:before {
+  content: "\D6STERREICH";
+  padding-left: 10px;
+  background-color: #EEEEEE;
+  color: #999999;
+}
+.ortszeit-wahl .onoffswitch-inner:after {
+  content: "RIO DE JANEIRO";
+  padding-right: 10px;
+  background-color: #E41800;
+  color: #FFFFFF;
+  text-align: right;
+}
+.ortszeit-wahl .onoffswitch-switch {
+  display: block;
+  width: 18px;
+  margin: 6px;
+  background: #FFFFFF;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 136px;
+  border: 2px solid #CCCCCC;
+  border-radius: 20px;
+  transition: all 0.3s ease-in 0s;
+}
+.ortszeit-wahl .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+  margin-left: 0;
+}
+.ortszeit-wahl .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+  right: 0px;
+}
+.aut-wahl {
+  float: left;
+  width: 33%;
+  margin: 15px 0;
+}
+.aut-wahl .beteiligung {
+  text-align: right;
+  padding: 5px 10px 5px 60px;
+  display: inline-block;
+}
+.aut-wahl .onoffswitch2 {
+  position: relative;
+  width: 87px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
+}
+.aut-wahl .onoffswitch-checkbox2 {
+  display: none;
+}
+.aut-wahl .onoffswitch-label2 {
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+  border: 2px solid #CCCCCC;
+  border-radius: 20px;
+  position: relative;
+}
+.aut-wahl .onoffswitch-inner2 {
+  display: block;
+  width: 200%;
+  margin-left: -100%;
+  transition: margin 0.3s ease-in 0s;
+}
+.aut-wahl .onoffswitch-inner2:before,
+.aut-wahl .onoffswitch-inner2:after {
+  display: block;
+  float: left;
+  width: 50%;
+  height: 30px;
+  padding: 0;
+  line-height: 30px;
+  font-size: 15px;
+  color: white;
+  font-family: Trebuchet, Arial, sans-serif;
+  font-weight: bold;
+  box-sizing: border-box;
+}
+.aut-wahl .onoffswitch-inner2:before {
+  content: "NEIN";
+  padding-left: 10px;
+  background-color: #EEEEEE;
+  color: #999999;
+}
+.aut-wahl .onoffswitch-inner2:after {
+  content: "JA";
+  padding-right: 10px;
+  background-color: #E41800;
+  color: #FFFFFF;
+  text-align: right;
+}
+.aut-wahl .onoffswitch-switch2 {
+  display: block;
+  width: 18px;
+  margin: 6px;
+  background: #FFFFFF;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 53px;
+  border: 2px solid #CCCCCC;
+  border-radius: 20px;
+  transition: all 0.3s ease-in 0s;
+}
+.aut-wahl .onoffswitch-checkbox2:checked + .onoffswitch-label2 .onoffswitch-inner2 {
+  margin-left: 0;
+}
+.aut-wahl .onoffswitch-checkbox2:checked + .onoffswitch-label2 .onoffswitch-switch2 {
+  right: 0px;
+}
+.medaillen-wahl {
+  float: left;
+  width: 33%;
+  margin: 15px 0;
+}
+.medaillen-wahl .medaille {
+  text-align: right;
+  padding: 5px 10px 5px 60px;
+  display: inline-block;
+}
+.medaillen-wahl .onoffswitch3 {
+  position: relative;
+  width: 87px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
+}
+.medaillen-wahl .onoffswitch-checkbox3 {
+  display: none;
+}
+.medaillen-wahl .onoffswitch-label3 {
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+  border: 2px solid #CCCCCC;
+  border-radius: 20px;
+  position: relative;
+}
+.medaillen-wahl .onoffswitch-inner3 {
+  display: block;
+  width: 200%;
+  margin-left: -100%;
+  transition: margin 0.3s ease-in 0s;
+}
+.medaillen-wahl .onoffswitch-inner3:before,
+.medaillen-wahl .onoffswitch-inner3:after {
+  display: block;
+  float: left;
+  width: 50%;
+  height: 30px;
+  padding: 0;
+  line-height: 30px;
+  font-size: 15px;
+  color: white;
+  font-family: Trebuchet, Arial, sans-serif;
+  font-weight: bold;
+  box-sizing: border-box;
+}
+.medaillen-wahl .onoffswitch-inner3:before {
+  content: "NEIN";
+  padding-left: 10px;
+  background-color: #EEEEEE;
+  color: #999999;
+}
+.medaillen-wahl .onoffswitch-inner3:after {
+  content: "JA";
+  padding-right: 10px;
+  background-color: #E41800;
+  color: #FFFFFF;
+  text-align: right;
+}
+.medaillen-wahl .onoffswitch-switch3 {
+  display: block;
+  width: 18px;
+  margin: 6px;
+  background: #FFFFFF;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 53px;
+  border: 2px solid #CCCCCC;
+  border-radius: 20px;
+  transition: all 0.3s ease-in 0s;
+}
+.medaillen-wahl .onoffswitch-checkbox3:checked + .onoffswitch-label3 .onoffswitch-inner3 {
+  margin-left: 0;
+}
+.medaillen-wahl .onoffswitch-checkbox3:checked + .onoffswitch-label3 .onoffswitch-switch3 {
+  right: 0px;
+}
+/* for Webkit's CSS-only solution */
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  .custom-select select {
+    padding-right: 30px;
+  }
+}
+@media only screen and (max-width: 1114px) {
+  .olympia section.select-wrapper {
+    width: 100%;
+    padding: 0 10px;
+  }
+  .olympia section.select-wrapper.filter-sportart {
+    text-align: left;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .olympia .ortszeit-wahl,
+  .olympia .aut-wahl,
+  .olympia .medaillen-wahl {
+    width: 100%;
+  }
+  .olympia .ortszeit-wahl .uhrzeit,
+  .olympia .aut-wahl .uhrzeit,
+  .olympia .medaillen-wahl .uhrzeit,
+  .olympia .ortszeit-wahl .beteiligung,
+  .olympia .aut-wahl .beteiligung,
+  .olympia .medaillen-wahl .beteiligung,
+  .olympia .ortszeit-wahl .medaille,
+  .olympia .aut-wahl .medaille,
+  .olympia .medaillen-wahl .medaille {
+    padding: 5px 10px 5px 10px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .olympia .half-width {
+    width: 100%!important;
+  }
+  .olympia .content_container {
+    padding: 0 10px;
+  }
+  .olympia .content_container .text-box-programm .programm div.text {
+    padding-left: 20px;
+  }
+  .olympia .content_container .text-box-programm .programm div.text span.heimspieler {
+    float: none!important;
+    margin-left: 0!important;
+    display: block;
+    padding: 5px 0;
+  }
+  .olympia .content_container .text-box-ergebnisse .ergebnis {
+    padding: 20px 10px;
+  }
+  .olympia .content_container .text-box-ergebnisse .ergebnisse table tbody {
+    width: 60%;
+  }
+  .olympia .tages-highlights {
+    max-height: 450px;
+    overflow: auto;
+    margin-bottom: 40px;
+  }
+  .olympia .tages-programm,
+  .olympia .text-box-live {
+    max-height: 100%!important;
+  }
+  .olympia .header_sp2 li {
+    width: 24.1%;
+    margin: 0 0.45%;
+  }
+  .olympia .full-width .content_container {
+    padding: 10px;
+  }
+  .olympia section.select-wrapper {
+    width: 100%;
+    padding: 0 10px;
+  }
+  .olympia section.select-wrapper.filter-sportart {
+    text-align: left;
+  }
+}
+@media only screen and (max-width: 639px) {
+  .olympia .header_sp2 ul {
+    width: 87%;
+  }
+  .olympia .header_sp2 li {
+    width: 32.3%;
+    margin: 0 0.5%;
+  }
+  .olympia .content_container .text-box-ergebnisse .ergebnisse table tbody {
+    width: 100%;
+    display: inline-table;
+  }
+}
+@media only screen and (max-width: 530px) {
+  .olympia .header_sp2 ul {
+    width: 80%;
+  }
+  .olympia .header_sp2 li {
+    width: 48%;
+    margin: 0 1%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .olympia .sort {
+    padding-right: 10px;
+  }
+  .olympia .sort span {
+    left: 0;
+  }
+  .olympia .content_container .text-box-programm .programm {
+    padding: 10px 10px;
+  }
+  .olympia .content_container .text-box-programm .programm div.zeit {
+    width: 50%;
+    text-align: left;
+    font-size: 17px;
+  }
+  .olympia .content_container .text-box-programm .programm div.sportart {
+    width: 50%;
+  }
+  .olympia .content_container .text-box-programm .programm div.text {
+    width: 100%;
+    padding-left: 0;
+    font-size: 15px;
+  }
+  .olympia .content_container .text-box-programm .programm div.text span.heimspieler {
+    float: none!important;
+    margin-left: 0!important;
+    display: block;
+    padding: 5px 0;
+  }
+  .olympia .content_container .text-box-medaillenspiegel table thead th {
+    font-size: 15px;
+    padding: 10px 4px;
+  }
+  .olympia .content_container .text-box-medaillenspiegel table thead th.flagge {
+    padding-left: 5px;
+  }
+  .olympia .content_container .text-box-medaillenspiegel table tbody tr td {
+    font-size: 15px;
+  }
+  .olympia .content_container .text-box-medaillenspiegel table tbody tr td.flagge {
+    padding-left: 7px;
+    position: relative;
+  }
+  .olympia .content_container .text-box-medaillenspiegel table tbody tr td.flagge img {
+    width: 25px;
+  }
+  .olympia .content_container .text-box-medaillenspiegel table tbody tr td.flagge a.tooltip {
+    cursor: default;
+    position: absolute;
+    width: 25px;
+    height: 100%;
+    display: block;
+    top: -10px;
+  }
+  .olympia .content_container .text-box-medaillenspiegel table tbody tr td.flagge a.tooltip:before {
+    position: absolute;
+    z-index: 999;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    left: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: "";
+    border-style: solid;
+    border-width: 6px 6px 0 6px;
+    border-color: rgba(0, 0, 0, 0.85) transparent transparent transparent;
+  }
+  .olympia .content_container .text-box-medaillenspiegel table tbody tr td.flagge a.tooltip:after {
+    display: block;
+    visibility: hidden;
+    position: absolute;
+    bottom: 0;
+    opacity: 0;
+    content: attr(data-tool);
+    height: auto;
+    min-width: 110px;
+    padding: 5px 8px;
+    z-index: 999;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.85);
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+  .olympia .content_container .text-box-medaillenspiegel table tbody tr td.flagge a.tooltip:hover:before {
+    visibility: visible;
+    opacity: 1;
+    bottom: 30px;
+    margin-left: -7px;
+  }
+  .olympia .content_container .text-box-medaillenspiegel table tbody tr td.flagge a.tooltip:hover:after {
+    visibility: visible;
+    opacity: 1;
+    bottom: 36px;
+    width: 110px;
+    margin-left: -9px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .olympia .content_container .text-box-medaillenspiegel table tbody tr.spieler-details td.flagge img {
+    width: 20px;
+  }
+  .olympia .content_container .text-box-medaillenspiegel table.table-nationen thead tr th:nth-child(1),
+  .olympia .content_container .text-box-medaillenspiegel table.table-spieler thead tr th:nth-child(1) {
+    display: none;
+  }
+  .olympia .content_container .text-box-medaillenspiegel table.table-nationen thead tr th:nth-child(2),
+  .olympia .content_container .text-box-medaillenspiegel table.table-spieler thead tr th:nth-child(2) {
+    padding-left: 5px;
+  }
+  .olympia .content_container .text-box-medaillenspiegel table.table-nationen tbody tr td:nth-child(2),
+  .olympia .content_container .text-box-medaillenspiegel table.table-spieler tbody tr td:nth-child(2) {
+    display: none;
+  }
+  .olympia .content_container .text-box-medaillenspiegel table.table-nationen tbody tr.spieler-details td:nth-child(2),
+  .olympia .content_container .text-box-medaillenspiegel table.table-spieler tbody tr.spieler-details td:nth-child(2) {
+    display: inline-table;
+    max-width: 100px;
+  }
+  .olympia .content_container .text-box-medaillenspiegel table.table-nationen tbody tr.spieler-details td:nth-child(1),
+  .olympia .content_container .text-box-medaillenspiegel table.table-spieler tbody tr.spieler-details td:nth-child(1) {
+    display: none;
+  }
+  .olympia section.select-wrapper {
+    width: 100%;
+  }
+  .olympia section.select-wrapper.filter-sportart {
+    text-align: left;
+  }
+  .olympia section.select-wrapper .custom-select {
+    width: 100%;
+  }
+  .olympia section.select-wrapper .custom-select select {
+    display: block;
+    margin-left: 0;
+    width: 100%;
+  }
+  .olympia section.select-wrapper .custom-select:after {
+    top: auto;
+  }
+  .olympia .ortszeit-wahl .onoffswitch,
+  .olympia .aut-wahl .onoffswitch,
+  .olympia .medaillen-wahl .onoffswitch {
+    float: right;
+    padding-right: 10px;
+  }
+  .olympia .ortszeit-wahl .onoffswitch .onoffswitch-switch,
+  .olympia .aut-wahl .onoffswitch .onoffswitch-switch,
+  .olympia .medaillen-wahl .onoffswitch .onoffswitch-switch {
+    right: 131px;
+  }
+  .olympia .ortszeit-wahl .onoffswitch2,
+  .olympia .aut-wahl .onoffswitch2,
+  .olympia .medaillen-wahl .onoffswitch2 {
+    float: right;
+    padding-right: 10px;
+  }
+  .olympia .ortszeit-wahl .onoffswitch2 .onoffswitch-switch2,
+  .olympia .aut-wahl .onoffswitch2 .onoffswitch-switch2,
+  .olympia .medaillen-wahl .onoffswitch2 .onoffswitch-switch2 {
+    right: 43px;
+  }
+  .olympia .ortszeit-wahl .onoffswitch3,
+  .olympia .aut-wahl .onoffswitch3,
+  .olympia .medaillen-wahl .onoffswitch3 {
+    float: right;
+    padding-right: 10px;
+  }
+  .olympia .ortszeit-wahl .onoffswitch3 .onoffswitch-switch3,
+  .olympia .aut-wahl .onoffswitch3 .onoffswitch-switch3,
+  .olympia .medaillen-wahl .onoffswitch3 .onoffswitch-switch3 {
+    right: 43px;
+  }
+}
+@media only screen and (max-width: 355px) {
+  .olympia .header_sp_spielbutton2 {
+    font-size: 13px;
+  }
+  .olympia .paging-container {
+    padding: 0 10px;
+  }
+  .olympia .paging-container .boxarrow {
+    font-size: 14px;
+  }
+  .olympia .paging-container .boxarrow.left span {
+    padding-right: 6px;
+  }
+  .olympia .paging-container .boxarrow.right span {
+    padding-left: 5px;
+  }
+  .olympia .content_container .text-box-programm .programm div.text span.bewerb {
+    width: 100%!important;
+  }
+  .olympia .content_container .text-box-programm .programm div.text span.phase {
+    width: 100%!important;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .olympia .header_sp2 ul {
+    width: 75%;
+  }
+  .olympia .content_container .text-box-ergebnisse .ergebnisse table tbody tr td.spieler {
+    max-width: 120px;
+  }
+  .olympia .content_container .text-box-ergebnisse .ergebnisse table tbody tr td.platzierung span.medaille.gold,
+  .olympia .content_container .text-box-ergebnisse .ergebnisse table tbody tr td.platzierung span.medaille.silber,
+  .olympia .content_container .text-box-ergebnisse .ergebnisse table tbody tr td.platzierung span.medaille.bronze {
+    width: 20px;
+    height: 20px;
+  }
+  .olympia .content_container .text-box-ergebnisse .ergebnisse table tbody tr td.nation img {
+    width: 20px;
+  }
+}
+body.olympia-krone #tickerbox {
+  margin: 0;
+  padding: 0;
+  color: #000;
+  width: 290px;
+  height: 395px;
+}
+body.olympia-krone .spielauswahl_spielbox {
+  width: 100%!important;
+  position: relative;
+  margin: 0;
+  max-width: 290px;
+  min-width: 290px;
+  height: 125px;
+  display: block;
+  margin-bottom: 10px;
+}
+body.olympia-krone .spielbox_oben {
+  padding: 0 15px;
+  padding-top: 5px;
+  box-sizing: border-box;
+  height: 100%;
+  padding-bottom: 28px;
+  border: none;
+}
+body.olympia-krone .spielbox_oben .sportart {
+  display: inline-block;
+  float: left;
+  width: 20%;
+  box-sizing: border-box;
+}
+body.olympia-krone .spielbox_oben .sportart-text {
+  display: inline-block;
+  float: left;
+  padding-left: 15px;
+  width: 80%;
+  box-sizing: border-box;
+  padding-top: 15px;
+  font-weight: bold;
+  font-size: 15px;
+}
+body.olympia-krone .spielbox_oben .bewerb {
+  float: left;
+  display: inline-block;
+  clear: both;
+  font-size: 14px;
+}
+body.olympia-krone .spielbox_unten {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+body.olympia-krone .spielbox_unten span {
+  padding: 0 10px;
+}
+body.olympia-krone .spielbox_unten p {
+  font-size: 15px;
+  line-height: 26px;
+}
+body.olympia-krone .sprite-actions-mini {
+  background-image: url(.././img/29b06f9a266e3b1301f3f2fee6e2a694.png);
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+}
+body.olympia-krone .sprite-actions-mini.ceremony {
+  background-position: 0px 0px;
+}
+body.olympia-krone .sprite-actions-mini.bogenschiessen {
+  background-position: 0px -40px;
+}
+body.olympia-krone .sprite-actions-mini.turnen {
+  background-position: 0px -80px;
+}
+body.olympia-krone .sprite-actions-mini.leichtathletik {
+  background-position: 0px -120px;
+}
+body.olympia-krone .sprite-actions-mini.badminton {
+  background-position: 0px -160px;
+}
+body.olympia-krone .sprite-actions-mini.basketball {
+  background-position: 0px -200px;
+}
+body.olympia-krone .sprite-actions-mini.beachvolleyball {
+  background-position: 0px -900px;
+}
+body.olympia-krone .sprite-actions-mini.boxen {
+  background-position: -50px 0px;
+}
+body.olympia-krone .sprite-actions-mini.kanu {
+  background-position: -50px -40px;
+}
+body.olympia-krone .sprite-actions-mini.radsport {
+  background-position: -50px -80px;
+}
+body.olympia-krone .sprite-actions-mini.schwimmen {
+  background-position: -50px -120px;
+}
+body.olympia-krone .sprite-actions-mini.pferdesport {
+  background-position: -50px -160px;
+}
+body.olympia-krone .sprite-actions-mini.fechten {
+  background-position: -50px -200px;
+}
+body.olympia-krone .sprite-actions-mini.fussball {
+  background-position: -50px -240px;
+}
+body.olympia-krone .sprite-actions-mini.golf {
+  background-position: 0px -280px;
+}
+body.olympia-krone .sprite-actions-mini.handball {
+  background-position: 0px -320px;
+}
+body.olympia-krone .sprite-actions-mini.hockey {
+  background-position: 0px -360px;
+}
+body.olympia-krone .sprite-actions-mini.judo {
+  background-position: 0px -400px;
+}
+body.olympia-krone .sprite-actions-mini.modernerfuenfkampf {
+  background-position: 0px -440px;
+}
+body.olympia-krone .sprite-actions-mini.rudern {
+  background-position: 0px -480px;
+}
+body.olympia-krone .sprite-actions-mini.rugby {
+  background-position: 0px -520px;
+}
+body.olympia-krone .sprite-actions-mini.segeln {
+  background-position: -50px -280px;
+}
+body.olympia-krone .sprite-actions-mini.schiessen {
+  background-position: -50px -320px;
+}
+body.olympia-krone .sprite-actions-mini.tischtennis {
+  background-position: -50px -360px;
+}
+body.olympia-krone .sprite-actions-mini.taekwondo {
+  background-position: -50px -400px;
+}
+body.olympia-krone .sprite-actions-mini.tennis {
+  background-position: -50px -440px;
+}
+body.olympia-krone .sprite-actions-mini.triathlon {
+  background-position: -50px -480px;
+}
+body.olympia-krone .sprite-actions-mini.volleyball {
+  background-position: -50px -520px;
+}
+body.olympia-krone .sprite-actions-mini.wasserball {
+  background-position: 0px -570px;
+}
+body.olympia-krone .sprite-actions-mini.gewichtheben {
+  background-position: -50px -560px;
+}
+body.olympia-krone .sprite-actions-mini.ringen {
+  background-position: 0px -600px;
+}
+body.olympia-krone .sprite-actions-mini.turmspringen {
+  background-position: -50px -600px;
+}
+body.olympia-krone .sprite-actions-small {
+  background-image: url(.././img/dd5fdde08ee8dc0c37a07c6ae40c1726.png);
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+}
+body.olympia-krone .sprite-actions-small.ceremony {
+  background-position: 0px 0px;
+}
+body.olympia-krone .sprite-actions-small.bogenschiessen {
+  background-position: 0px -80px;
+}
+body.olympia-krone .sprite-actions-small.turnen {
+  background-position: 0px -150px;
+}
+body.olympia-krone .sprite-actions-small.leichtathletik {
+  background-position: 0px -225px;
+}
+body.olympia-krone .sprite-actions-small.badminton {
+  background-position: 0px -300px;
+}
+body.olympia-krone .sprite-actions-small.basketball {
+  background-position: 0px -375px;
+}
+body.olympia-krone .sprite-actions-small.beachvolleyball {
+  background-position: 0px -450px;
+}
+body.olympia-krone .sprite-actions-small.boxen {
+  background-position: -75px 0px;
+}
+body.olympia-krone .sprite-actions-small.kanu {
+  background-position: -75px -80px;
+}
+body.olympia-krone .sprite-actions-small.radsport {
+  background-position: -75px -150px;
+}
+body.olympia-krone .sprite-actions-small.schwimmen {
+  background-position: -75px -225px;
+}
+body.olympia-krone .sprite-actions-small.pferdesport {
+  background-position: -75px -300px;
+}
+body.olympia-krone .sprite-actions-small.fechten {
+  background-position: -75px -375px;
+}
+body.olympia-krone .sprite-actions-small.fussball {
+  background-position: -75px -450px;
+}
+body.olympia-krone .sprite-actions-small.golf {
+  background-position: -150px 0px;
+}
+body.olympia-krone .sprite-actions-small.handball {
+  background-position: -150px -80px;
+}
+body.olympia-krone .sprite-actions-small.hockey {
+  background-position: -150px -150px;
+}
+body.olympia-krone .sprite-actions-small.judo {
+  background-position: -150px -225px;
+}
+body.olympia-krone .sprite-actions-small.modernerfuenfkampf {
+  background-position: -150px -300px;
+}
+body.olympia-krone .sprite-actions-small.rudern {
+  background-position: -150px -375px;
+}
+body.olympia-krone .sprite-actions-small.rugby {
+  background-position: -150px -450px;
+}
+body.olympia-krone .sprite-actions-small.segeln {
+  background-position: -225px 0px;
+}
+body.olympia-krone .sprite-actions-small.schiessen {
+  background-position: -225px -80px;
+}
+body.olympia-krone .sprite-actions-small.tischtennis {
+  background-position: -225px -150px;
+}
+body.olympia-krone .sprite-actions-small.taekwondo {
+  background-position: -225px -2250px;
+}
+body.olympia-krone .sprite-actions-small.tennis {
+  background-position: -225px -300px;
+}
+body.olympia-krone .sprite-actions-small.triathlon {
+  background-position: -225px -375px;
+}
+body.olympia-krone .sprite-actions-small.volleyball {
+  background-position: -225px -450px;
+}
+body.olympia-krone .sprite-actions-small.wasserball {
+  background-position: -300px 0px;
+}
+body.olympia-krone .sprite-actions-small.gewichtheben {
+  background-position: -300px -80px;
+}
+body.olympia-krone .sprite-actions-small.ringen {
+  background-position: -300px -150px;
+}
+body.olympia-krone .sprite-actions-small.turmspringen {
+  background-position: -300px -225px;
+}

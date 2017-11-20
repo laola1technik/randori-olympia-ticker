@@ -1,0 +1,71 @@
+@font-face { font-family:'UrbanoBoldCondensed'; src:url('urbano/Urbano-BoldCond-webfont.eot'); src:url('urbano/Urbano-BoldCond-webfont.eot?iefix') format('eot'), url('urbano/Urbano-BoldCond-webfont.woff') format('woff'), url('urbano/Urbano-BoldCond-webfont.ttf') format('truetype'), url('urbano/Urbano-BoldCond-webfont.svg#webfont') format('svg'); font-weight:normal; font-style:normal; }
+@font-face { font-family:'UrbanoCondensed'; src:url('urbano/Urbano-Cond-webfont.eot'); src:url('urbano/Urbano-Cond-webfont.eot?iefix') format('eot'), url('urbano/Urbano-Cond-webfont.woff') format('woff'), url('urbano/Urbano-Cond-webfont.ttf') format('truetype'), url('urbano/Urbano-Cond-webfont.svg#webfont') format('svg'); font-weight:normal; font-style:normal; }
+@font-face { font-family:'UrbanoLightCondensed'; src:url('urbano/Urbano-LightCond-webfont.eot'); src:url('urbano/Urbano-LightCond-webfont.eot?iefix') format('eot'), url('urbano/Urbano-LightCond-webfont.woff') format('woff'), url('urbano/Urbano-LightCond-webfont.ttf') format('truetype'), url('urbano/Urbano-LightCond-webfont#webfont') format('svg'); font-weight:normal; font-style:normal; }
+
+body { font:17px 'Roboto Condensed'; color:#323A45; margin:0; padding:0; }
+i { color: #444444; }
+a:link, a:visited, a:hover, a:active, a:focus { text-decoration:none; }
+
+#tickerbox { margin:0; padding:0; color: #000; }
+
+.spielauswahl_spielbox { position: relative; display: inline-block; margin: 2% 1%; width: 17%; background-color: #f9f9f9; overflow:hidden; }
+.spielauswahl_spielbox:hover { background-color:#f2f2f2; }
+.spielauswahl_spielbox:hover .spielbox_unten { background-color: #E41800; }
+
+.spielboxlive .spielbox_unten {	background-color: #E41800;}
+.spielauswahl_spielbox a { display: block; height: 100%; }
+.spielbox_oben { height:77px; border-bottom:1px solid #b2b2b2; font:13px 'Roboto Condensed'; color:#323A45; overflow:hidden; }
+.spielbox_mitte { padding:1px; color:black; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.spielbox_mitte p { color:black; font:13px 'Roboto Condensed'; margin-top:10px; margin-left:5px; }
+.spielbox_mitte span { color:black; font:13px 'Roboto Condensed'; margin-top:10px; margin-left:5px; }
+.spielbox_mitte i { color: #323A45; display:inline-block; margin:5px 0 5px 5px; }
+.spielbox_unten { color:#fff; text-align:center; height:28px; background-color:#5f5f5f; font-size:13px; text-transform:uppercase; font-weight:bold; line-height:25px; }
+.spielbox_unten a { color:white; }
+.spielauswahl_spielbox .spielbox_unten p { font-size: 13px; margin:0; padding:0; }
+
+.spielbox_oben_links { position:absolute; width:50%; height:55px; }
+.spielbox_oben_mitte { position:absolute; width:100%;	height:55px; }
+.spielbox_oben_rechts { position:absolute; right:0; width:50%; height:55px; }
+.spielbox_oben_teamlogo { margin:auto; margin-top:8px; width:36px; height:36px; }
+.nat .spielbox_oben_teamlogo { height:26px; margin-top:15px; }
+.spielbox_oben_spielstandanzeige { margin-top:10px; font-size:30px; text-align:center; font-weight:bold; }
+.spielbox_oben_teamnamen_links, .spielbox_oben_teamnamen_rechts { width:50%; text-align:center; font-size:13px; line-height:15px; text-align:center; position:relative; top:10px; opacity:0.75; margin:auto; }
+
+@media only screen and (max-width:1100px) {
+	.spielbox_oben_spielstandanzeige { margin-top:10px; font-size:25px; }
+	.spielbox_oben_links .spielbox_oben_teamlogo, .spielbox_oben_teamnamen_links { margin-left:15px; }
+	.spielbox_oben_rechts .spielbox_oben_teamlogo, .spielbox_oben_teamnamen_rechts { margin-right:15px; }
+}
+
+@media only screen and (max-width:800px) {
+	.spielbox_oben_links .spielbox_oben_teamlogo, .spielbox_oben_teamnamen_links { margin-left:5px; }
+	.spielbox_oben_rechts .spielbox_oben_teamlogo, .spielbox_oben_teamnamen_rechts { margin-right:5px; }
+}
+
+
+@media only screen and (max-width : 772px) { 
+	.spielauswahl_spielbox { width: 18%; margin: 2% 0.7%; }
+	.spielbox_oben { height: 56px; }
+	.spielbox_mitte { display:none; }
+	.spielbox_oben_links { height: 30px; }
+	.spielbox_oben_mitte { height: 30px; }
+	.spielbox_oben_rechts { height: 30px; }
+	.spielbox_oben_teamlogo { width: 16px; height: 16px; }
+	.nat .spielbox_oben_teamlogo { height:13px; margin-top:8px; }
+	.spielbox_oben_spielstandanzeige { margin-top: 5px; font-size: 16px; }
+	.spielbox_oben_teamnamen_links, .spielbox_oben_teamnamen_rechts { margin-top:5px; font-size: 12px;}
+	.spielauswahl_spielbox .spielbox_unten p { font-size: 11px; }
+}
+
+@media only screen and (max-width : 530px) { 
+	.spielauswahl_spielbox { width: 17.5%; margin: 2% 0.2%; }
+	.spielbox_oben_links .spielbox_oben_teamlogo, .spielbox_oben_teamnamen_links { margin-left:2px; }
+	.spielbox_oben_rechts .spielbox_oben_teamlogo, .spielbox_oben_teamnamen_rechts { margin-right:2px; }
+	.spielbox_oben_teamnamen_links, .spielbox_oben_teamnamen_rechts { font-size: 8px;}
+	.spielauswahl_spielbox .spielbox_unten p { font-size: 8px; }
+	.spielbox_oben_spielstandanzeige { margin-top: 8px; font-size: 12px; }
+}	
+
+@media only screen and (max-width: 772px) and (max-device-width: 640px) {
+    .spielbox_oben_teamnamen_links, .spielbox_oben_teamnamen_rechts { margin-top: 5px; font-size: 9px; }
+}
