@@ -1,6 +1,6 @@
 import Loader from './Loader';
 import Parser from './Parser';
-import View from './view.js';
+import View from './View';
 
 export default class Ticker {
     constructor() {
