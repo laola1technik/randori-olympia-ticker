@@ -23,9 +23,9 @@
     "webpack": "^3.7.1"
   },
   "scripts": {
-    "dev": "NODE_ENV=development WATCH=false CorePath=./lib/vendor/laola1/ node node_modules/webpack/bin/webpack.js --hide-modules",
-    "integration": "NODE_ENV=production WATCH=false node node_modules/webpack/bin/webpack.js --hide-modules",
-    "production": "NODE_ENV=production WATCH=false node node_modules/webpack/bin/webpack.js --hide-modules"
+    "dev": "cross-env NODE_ENV=development WATCH=false CorePath=./lib/vendor/laola1/ node node_modules/webpack/bin/webpack.js --hide-modules",
+    "integration": "cross-env NODE_ENV=production WATCH=false node node_modules/webpack/bin/webpack.js --hide-modules",
+    "production": "cross-env NODE_ENV=production WATCH=false node node_modules/webpack/bin/webpack.js --hide-modules"
   },
   "repository": {
     "type": "git",
