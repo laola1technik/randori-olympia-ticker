@@ -3,18 +3,18 @@ const webpack = require('webpack'),
     ExtractTextPlugin = require("extract-text-webpack-plugin"),
     isProduction = process.env.NODE_ENV === "production";
 
-const extractLess = new ExtractTextPlugin('css/[name].css');
+const extractCss = new ExtractTextPlugin('css/[name].css');
 
 module.exports = {
     context: __dirname,
     devtool: false,
-    plugins: !isProduction ? [extractLess] : [
+    plugins: !isProduction ? [extractCss] : [
         new webpack.optimize.OccurrenceOrderPlugin(),
         new webpack.optimize.UglifyJsPlugin({
             mangle: true,
             sourcemap: false
         }),
-        extractLess
+        extractCss
     ],
     entry: {
         "olympiaTicker": [
@@ -38,7 +38,7 @@ module.exports = {
             },
             {
                 test: /\.(less|css)$/,
-                use: extractLess.extract({
+                use: extractCss.extract({
                     use: [{
                         loader: "css-loader",
                         options: {
