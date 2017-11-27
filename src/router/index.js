@@ -1,15 +1,20 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
+import LiveTicker from '@/components/liveticker/Index.vue'
+import NotFound from '@/components/static/NotFound.vue'
 
 Vue.use(Router)
 
 export default new Router({
   routes: [
     {
-      path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
+      path: '/live',
+      name: 'LiveTicker',
+      component: LiveTicker
+    },
+    {
+      path: '*',
+      component: NotFound
     }
   ]
 })

@@ -1,0 +1,620 @@
+body.switch-left .header_sp2 { margin: 0 0 0 1%!important;}
+.olympia { background:#f2f2f2;
+  .werbung_fullsizebanner div { width: auto; }
+  .aright { text-align:right;}
+  .aleft { text-align:left;}
+  .acenter { text-align:center;}
+  .clear-left { clear:left;}
+  .fleft { float:left;}
+  .fright {float:right;}
+  .fnone { float:none!important;}
+  .sort { padding-right:5px; position: relative; width: auto;
+    span { position: absolute; left:-10px;
+      &.fa-caret-up { top: -3px; }
+      &.fa-caret-down { bottom: -2px; }
+    }
+  }
+  .main_container { background:transparent;}
+  .stage { width:100%!important; left:0!important;}
+  .header_spcontainer2 { position:relative; height:80px; background-color:#3f3f3f; }
+  .header_sp2 { position:relative; width:100%; max-width:1200px; margin:0 auto; cursor:pointer; }
+  .header_sp_konferenzbtn2, .header_sp_nextbuttonlinks2, .header_sp_nextbuttonrechts2 { position:absolute; top:10px; left:0; width:120px; height:60px; border:none; border-radius:0; color:#FFF; text-align:center; line-height:55px; background-color: #2c2c2c; padding-top:2px; }
+  .header_sp_nextbuttonlinks2, .header_sp_nextbuttonrechts2 { background-color:#e41800; width:35px; height:35px; font-size:40px; line-height:20px; top:23px; }
+  .header_sp_nextbuttonlinks2 { left:130px; }
+  .header_sp_nextbuttonrechts2 { left:auto; right:0; }
+  .header_sp_nextbuttonrechts2.inactive, .header_sp_nextbuttonlinks2.inactive { z-index:10; background-color:#a6a6a6; color:#f2f2f2; opacity:0.25; }
+  .header_sp_spielbutton_container2 { left:200px; height:60px; background-color:red; }
+  .header_sp_spielbutton2 { position:relative; float:left; margin-right:10px; top:10px; left:190px; width:140px; height:60px; color:#FFF;
+    text-align:center; background: #2c2c2c; text-transform: uppercase;
+    &:hover {background:#e41800;} 
+   }
+  .header_sp_nextbuttonrechts2.inactive:hover, .header_sp_nextbuttonlinks2.inactive:hover { background-color:#a6a6a6; } 
+  .header_sp_spielbutton2:hover .header_sp_spielbutton_spielstand2, .header_sp_spielbutton_spielstand2.rot:hover { color:white!important; }
+  .header_sp_spielbutton2.active{ background: white; color: black; border-left:4px solid #e41800; border-right:4px solid #e41800;
+    &:hover {  background: white; color: black; border-left:4px solid #e41800; border-right:4px solid #e41800;}
+  }
+  .header_sp_nextbuttonlinks2 {left: 0px;}
+  p.header_sp_spielbutton_nav2 {padding-top: 20px;}
+  .header_sp2 {
+    ul {  width: 90%;text-align: center;margin: 0 auto;}
+    li { left:0; width:19.25%; margin-right:0.9%;
+      &:last-child { margin-right:0;}
+    }
+  }
+  .half-width { width:49%;
+    h2 { .aleft!important;}
+    .seemorebtn { display: block;width: 100%;margin: 0 auto;text-align: center;float: left;padding: 20px 0 30px 0;
+      a { display: inline-block;color: #fff;font-weight: bold;text-transform: uppercase;background: #e41800;padding: 10px;
+        span { background: url('../../static/img/right-arrow.png'); width: 15px;display: inline-block;height: 15px;background-size: 100%;background-repeat: no-repeat;position: relative;top: 1px;}
+      }
+    }
+  }
+  .full-width { width:100%;
+    h2 { .acenter;}
+    .content_container { padding:20px; max-height: 100%!important; clear:left;}
+    .content_container .text-box-programm .programm div.text span {
+      &.bewerb { display: inline-block; width: 45%; vertical-align: top; }
+      &.phase { display: inline-block; width: 25%; vertical-align: top; margin-right:5%; }
+      &.heimspieler {float: none!important; margin-left: 5%;}
+    }
+  }
+  .paging-container {width: 100%;clear: both;position: relative;font-size: 14px;height: 40px;margin: 2% 0;text-align: center; display: inline-block; padding: 0 20px;
+    .boxarrow {float: left;font-size: 16px;font-weight: bold;line-height: 9px;color: #000000; opacity: 0.8;
+      &.left { margin: 15px 0 0 0;
+        span { padding-right:20px;}
+      }
+      &.right {float: right;margin: 15px 0 0 0;
+        span { padding-left:20px;}
+      }
+      img {vertical-align: middle;width: 30px;}
+      &:hover { opacity: 1}
+    }
+  }
+  section.select-wrapper { width:50%; float:left; padding: 0 20px;margin: 15px 0;
+    &.filter-sportart { .aright;
+      &.single-filter { .aleft!important; width:100%;}
+    }
+    label.custom-select {position: relative;display: inline-block;}
+    .custom-select {
+      select {display: inline-block;border: 2px solid #bbb;padding: 4px 3px 3px 5px;margin: 0;font: inherit;outline:none; line-height: 1.2;background: #f8f8f8;-webkit-appearance:none; -webkit-border-radius: 6px;-moz-border-radius: 6px;border-radius: 6px;min-width: 200px; margin-left: 10px;}
+      &:after {content: "▼";position: absolute;top: 0;right: 0;bottom: 0;font-size: 60%;line-height: 30px;padding: 0 7px;background: #bbb;color: white; pointer-events:none; -webkit-border-radius: 0 3px 3px 0;-moz-border-radius: 0 3px 3px 0;border-radius: 0 3px 3px 0;}
+    }
+  }
+  .datum, .sport-art {margin: 30px 0 20px 0;
+    span { font-weight: bold; font-size:23px; vertical-align:middle;
+      &.sprite-actions-small { margin-right:2%;}
+    }
+  }
+  .tages-highlights { max-height:950px; overflow:auto;}
+  //.text-box-live {max-height: 365px;overflow: auto;}
+  .text-box-live {max-height: 365px;}
+  .tages-programm { max-height:365px; overflow:auto;}
+  .content_container { width:100%; padding:0 20px;
+    .text-box-programm { width:100%; padding:0px; height: 100%; display: block; .fleft;
+      .programm { width:100%; padding: 10px 20px; display: inline-block; vertical-align: middle; position: relative;
+        div { .fleft;
+          &.text { width:75%;
+            span {
+              &.heimspieler { .fright;
+                img { width: 20px;}
+                span { padding: 0 10px; font-weight: bold;}
+              }
+            }
+          }
+          &.sportart { width: 10%; .acenter;}
+          &.zeit { width: 15%; font-weight: bold; .acenter;}
+          img.hasMedal {width: 30px; position: absolute; right: 20px; top: 0; }
+        }
+
+        &:nth-child(even) { background: #f2f2f2;}
+      }
+    }
+    .text-box-highlights, .text-box-live { width:100%; padding:20px; height: 100%; display: inline-block; position:relative; .fleft;
+      div {
+        &.left { width:15%; .fleft; .acenter;}
+        &.right { width:85%; .fright; padding-left:25px; position:relative;}
+        &.medaille { position: absolute;top: 0px;right: 30px;
+          &.gold { background: url('../../static/img/gold-medal.png'); width:30px; height:30px; background-size:100%;}
+          &.bronze { background: url('../../static/img/bronze-medal.png'); width:30px; height:30px; background-size:100%;}
+          &.silber { background: url('../../static/img/silver-medal.png'); width:30px; height:30px; background-size:100%;}
+        }
+        &.text {
+          p.title { font-weight:bold;}
+        }
+      }
+      &:nth-child(even) { background:#f2f2f2;}
+    }
+    .text-box-ergebnisse {width:100%; padding:0px; height: 100%; display: block;
+      .ergebnis {padding: 20px; background: #fff;
+        &:nth-child(even) { background:#f2f2f2;}
+      }
+      .sport-kategorie { width:100%; display: inline-block; font-weight: bold;
+        div { .fleft;
+          &.kategorie { margin-left: 5%; padding-top: 10px;}
+        }
+      }
+      .ergebnisse { width: 100%;
+         table { width:100%; .acenter;
+           tbody { width:40%; display: inline-table;
+             tr { padding: 5px 10px;
+               td { vertical-align:middle; padding: 5px 0;
+                 &.platzierung {
+                   span.medaille { display: inline-block;
+                    &.gold { background: url('../../static/img/gold-medal.png'); width:25px; height:25px; background-size:100%;}
+                    &.bronze { background: url('../../static/img/bronze-medal.png'); width:25px; height:25px; background-size:100%;}
+                    &.silber { background: url('../../static/img/silver-medal.png'); width:25px; height:25px; background-size:100%;}
+                   }
+                 }
+                 &.nation { .aright;
+                   img { width:25px;}
+                 }
+               }
+               &.bronze {
+                 td {border-bottom: 1px solid #ccc;}
+               }
+             }
+           }
+         }
+      }
+    }
+    .text-box-medaillenspiegel { width: 100%;padding: 0px;height: 100%;display: block;
+      .liste-nationen { width: 100%; margin: 0 auto; .acenter;}
+      table {
+        &.table-nationen {width: 100%; max-width:800px; text-align: center;margin: 0 auto;}
+        thead { background: #ccc;
+          th { padding: 10px 0;font-weight: bold;
+            &.gold, &.silber, &.bronze, &.gesamt { .acenter;}
+            &.flagge { padding-left: 20px;}            
+          }
+        }
+        tbody {
+          tr { 
+            td { vertical-align: middle; padding: 10px 0; border-top: 1px solid #e6e6e6;
+              &.gold, &.silber, &.bronze, &.gesamt { .acenter;}
+              &.flagge { padding-left: 20px;
+                img { width:35px;}
+              }
+            }
+            &.isClickableNation { cursor: pointer; }
+            &.spieler-details { 
+              td { border-top: none;
+                &.flagge { text-align: right;padding: 0 40px 0 0;
+                  img { width:30px;}
+                }
+              }
+              &:nth-child(even) { background: #f2f2f2;}
+            }
+            &:last-child {
+              td { border-bottom: 1px solid #e6e6e6;}
+            }
+          }
+        }
+      }
+      .select-view { display: inline-block; width:100%;
+        div {
+          &.nationen, &.spieler { .fright; margin: 5px 0 5px 5px;
+            a { background: #f2f2f2;color: #333;padding: 5px 10px;
+              &.active, &:hover { background: #ccc}
+            }
+          }
+          &.view-wrapper { width: 100%; max-width: 800px; margin: 0 auto; .acenter;}
+        }
+      }
+    }
+  }
+}
+
+
+.sprite-actions-big {background-image: url('../../static/img/sprite-icons-big.png'); display:inline-block;width: 100px;height: 100px;
+  &.ceremony {background-position: 0px 0px;}
+  &.bogenschiessen {background-position: 0px -150px;}
+  &.turnen {background-position: 0px -300px;}
+  &.leichtathletik {background-position: 0px -450px;}
+  &.badminton {background-position: 0px -600px;}
+  &.basketball {background-position: -0px -750px;}
+  &.beachvolleyball {background-position: -0px -900px;}
+  &.boxen {background-position: -150px 0px;}
+  &.kanu {background-position: -150px -150px;}
+  &.radsport {background-position: -150px -300px;}
+  &.schwimmen {background-position: -150px -450px;}
+  &.pferdesport {background-position: -150px -600px;}
+  &.fechten {background-position: -150px -750px;}
+  &.fussball {background-position: -150px -900px;}
+  &.golf {background-position: -300px -0px;}
+  &.handball {background-position: -300px -150px;}
+  &.hockey {background-position: -300px -300px;}
+  &.judo {background-position: -300px -450px;}
+  &.modernerfuenfkampf {background-position: -300px -600px;}
+  &.rudern {background-position: -300px -750px;}
+  &.rugby {background-position: -300px -900px;}
+  &.segeln {background-position: -450px 0px;}
+  &.schiessen {background-position: -450px -150px;}
+  &.tischtennis {background-position: -450px -300px;}
+  &.taekwondo {background-position: -450px -450px;}
+  &.tennis {background-position: -450px -600px;}
+  &.triathlon {background-position: -450px -750px;}
+  &.volleyball {background-position: -450px -900px;}
+  &.wasserball {background-position: -600px 0px;}
+  &.gewichtheben {background-position: -600px -150px;}
+  &.ringen {background-position: -600px -300px;}
+  &.turmspringen {background-position: -600px -450px;}
+}
+
+.sprite-actions-small {background-image: url('../../static/img/sprite-icons-small.png'); display:inline-block;width: 50px;height: 50px;
+  &.ceremony {background-position: 0px 0px;}
+  &.bogenschiessen {background-position: 0px -80px;}
+  &.turnen {background-position: 0px -150px;}
+  &.leichtathletik {background-position: 0px -225px;}
+  &.badminton {background-position: 0px -300px;}
+  &.basketball {background-position: -0px -375px;}
+  &.beachvolleyball {background-position: -0px -450px;}
+  &.boxen {background-position: -75px 0px;}
+  &.kanu {background-position: -75px -80px;}
+  &.radsport {background-position: -75px -150px;}
+  &.schwimmen {background-position: -75px -225px;}
+  &.pferdesport {background-position: -75px -300px;}
+  &.fechten {background-position: -75px -375px;}
+  &.fussball {background-position: -75px -450px;}
+  &.golf {background-position: -150px -0px;}
+  &.handball {background-position: -150px -80px;}
+  &.hockey {background-position: -150px -150px;}
+  &.judo {background-position: -150px -225px;}
+  &.modernerfuenfkampf {background-position: -150px -300px;}
+  &.rudern {background-position: -150px -375px;}
+  &.rugby {background-position: -150px -450px;}
+  &.segeln {background-position: -225px 0px;}
+  &.schiessen {background-position: -225px -80px;}
+  &.tischtennis {background-position: -225px -150px;}
+  &.taekwondo {background-position: -225px -2250px;}
+  &.tennis {background-position: -225px -300px;}
+  &.triathlon {background-position: -225px -375px;}
+  &.volleyball {background-position: -225px -450px;}
+  &.wasserball {background-position: -300px 0px;}
+  &.gewichtheben {background-position: -300px -80px;}
+  &.ringen {background-position: -300px -150px;}
+  &.turmspringen {background-position: -300px -225px;}
+}
+
+
+.sprite-actions-mini {background-image: url('../../static/img/sprite-icons-mini.png'); display:inline-block;width: 30px;height: 30px; vertical-align: middle;
+  &.ceremony {background-position: 0px 0px;}
+  &.bogenschiessen {background-position: 0px -40px;}
+  &.turnen {background-position: 0px -80px;}
+  &.leichtathletik {background-position: 0px -120px;}
+  &.badminton {background-position: 0px -160px;}
+  &.basketball {background-position: -0px -200px;}
+  &.beachvolleyball {background-position: -0px -870px;}
+  &.boxen {background-position: -50px 0px;}
+  &.kanu {background-position: -50px -40px;}
+  &.radsport {background-position: -50px -80px;}
+  &.schwimmen {background-position: -50px -120px;}
+  &.pferdesport {background-position: -50px -160px;}
+  &.fechten {background-position: -50px -200px;}
+  &.fussball {background-position: -50px -240px;}
+  &.golf {background-position: 0px -280px;}
+  &.handball {background-position: 0px -320px;}
+  &.hockey {background-position: 0px -360px;}
+  &.judo {background-position: 0px -400px;}
+  &.modernerfuenfkampf {background-position: 0px -440px;}
+  &.rudern {background-position: 0px -480px;}
+  &.rugby {background-position: 0px -530px;}
+  &.segeln {background-position: -50px -280px;}
+  &.schiessen {background-position: -50px -320px;}
+  &.tischtennis {background-position: -50px -360px;}
+  &.taekwondo {background-position: -50px -400px;}
+  &.tennis {background-position: -50px -440px;}
+  &.triathlon {background-position: -50px -480px;}
+  &.volleyball {background-position: -50px -520px;}
+  &.wasserball {background-position: 0px -570px;}
+  &.gewichtheben {background-position: -50px -560px;}
+  &.ringen {background-position: 0px -600px;}
+  &.turmspringen {background-position: -50px -600px;}
+}
+
+.ortszeit-wahl {float: left;width: 33%;margin: 15px 0;
+  .uhrzeit {text-align: right;padding: 5px 10px 5px 60px; display: inline-block;}
+  .onoffswitch {position: relative; width: 174px;-webkit-user-select:none; -moz-user-select:none; -ms-user-select: none; display: inline-block;vertical-align: middle; text-align: left; }
+  .onoffswitch-checkbox {display: none;}
+  .onoffswitch-label {display: block; overflow: hidden; cursor: pointer;border: 2px solid #CCCCCC; border-radius: 20px; position: relative;}
+  .onoffswitch-inner {display: block; width: 200%; margin-left: -100%;transition: margin 0.3s ease-in 0s;}
+  .onoffswitch-inner:before, .onoffswitch-inner:after {display: block; float: left; width: 50%; height: 30px; padding: 0; line-height: 30px;font-size: 15px; color: white; font-family: Arial, sans-serif; font-weight: bold;box-sizing: border-box;}
+  .onoffswitch-inner:before {content: "ÖSTERREICH";padding-left: 10px;background-color: #EEEEEE; color: #999999;}
+  .onoffswitch-inner:after {content: "RIO DE JANEIRO";padding-right: 10px;background-color: #E41800; color: #FFFFFF;text-align: right;}
+  .onoffswitch-switch {display: block; width: 18px; margin: 6px;background: #FFFFFF;position: absolute; top: 0; bottom: 0;right: 136px;border: 2px solid #CCCCCC; border-radius: 20px;transition: all 0.3s ease-in 0s; }
+  .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {margin-left: 0;}
+  .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {right: 0px; }
+}
+
+.aut-wahl { float: left;width: 33%;margin: 15px 0;
+  .beteiligung {text-align: right;padding: 5px 10px 5px 60px; display: inline-block;}
+  .onoffswitch2 {position: relative; width: 87px;-webkit-user-select:none; -moz-user-select:none; -ms-user-select: none; display: inline-block;vertical-align: middle; text-align: left; }
+  .onoffswitch-checkbox2 {display: none;}
+  .onoffswitch-label2 {display: block; overflow: hidden; cursor: pointer;border: 2px solid #CCCCCC; border-radius: 20px;position: relative;}
+  .onoffswitch-inner2 {display: block; width: 200%; margin-left: -100%;transition: margin 0.3s ease-in 0s;}
+  .onoffswitch-inner2:before, .onoffswitch-inner2:after {display: block; float: left; width: 50%; height: 30px; padding: 0; line-height: 30px;font-size: 15px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;box-sizing: border-box;}
+  .onoffswitch-inner2:before {content: "NEIN";padding-left: 10px;background-color: #EEEEEE; color: #999999;}
+  .onoffswitch-inner2:after {content: "JA";padding-right: 10px;background-color: #E41800; color: #FFFFFF;text-align: right;}
+  .onoffswitch-switch2 {display: block; width: 18px; margin: 6px;background: #FFFFFF;position: absolute; top: 0; bottom: 0;right: 53px;border: 2px solid #CCCCCC; border-radius: 20px;transition: all 0.3s ease-in 0s; }
+  .onoffswitch-checkbox2:checked + .onoffswitch-label2 .onoffswitch-inner2 {margin-left: 0;}
+  .onoffswitch-checkbox2:checked + .onoffswitch-label2 .onoffswitch-switch2 {right: 0px; }
+}
+
+.medaillen-wahl { float: left;width: 33%;margin: 15px 0;
+  .medaille {text-align: right;padding: 5px 10px 5px 60px; display: inline-block;}
+  .onoffswitch3 {position: relative; width: 87px;-webkit-user-select:none; -moz-user-select:none; -ms-user-select: none; display: inline-block;vertical-align: middle; text-align: left; }
+  .onoffswitch-checkbox3 {display: none;}
+  .onoffswitch-label3 {display: block; overflow: hidden; cursor: pointer;border: 2px solid #CCCCCC; border-radius: 20px;position: relative;}
+  .onoffswitch-inner3 {display: block; width: 200%; margin-left: -100%;transition: margin 0.3s ease-in 0s;}
+  .onoffswitch-inner3:before, .onoffswitch-inner3:after {display: block; float: left; width: 50%; height: 30px; padding: 0; line-height: 30px;font-size: 15px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;box-sizing: border-box;}
+  .onoffswitch-inner3:before {content: "NEIN";padding-left: 10px;background-color: #EEEEEE; color: #999999;}
+  .onoffswitch-inner3:after {content: "JA";padding-right: 10px;background-color: #E41800; color: #FFFFFF;text-align: right;}
+  .onoffswitch-switch3 {display: block; width: 18px; margin: 6px;background: #FFFFFF;position: absolute; top: 0; bottom: 0;right: 53px;border: 2px solid #CCCCCC; border-radius: 20px;transition: all 0.3s ease-in 0s; }
+  .onoffswitch-checkbox3:checked + .onoffswitch-label3 .onoffswitch-inner3 {margin-left: 0;}
+  .onoffswitch-checkbox3:checked + .onoffswitch-label3 .onoffswitch-switch3 {right: 0px; }
+}
+ /* for Webkit's CSS-only solution */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    .custom-select select {
+        padding-right:30px;
+    }
+}
+
+@media only screen and (max-width:1114px) {
+  .olympia {
+    section.select-wrapper { width: 100%; padding: 0 10px;
+      &.filter-sportart {text-align: left;}
+    }
+  }
+}
+
+@media only screen and (max-width:1024px) {
+  
+  .olympia {
+    .ortszeit-wahl, .aut-wahl, .medaillen-wahl { width:100%;
+      .uhrzeit, .beteiligung , .medaille { padding: 5px 10px 5px 10px;}
+    }
+  }
+  
+}
+
+@media only screen and (max-width:768px) {
+  .olympia {
+    .half-width { width: 100%!important;}
+    .content_container {padding: 0 10px;
+      .text-box-programm .programm div.text {padding-left: 20px;
+        span.heimspieler {float: none!important;margin-left: 0!important;display: block; padding:5px 0;}
+      }
+      .text-box-ergebnisse {
+        .ergebnis { padding: 20px 10px;}
+        .ergebnisse table tbody {width: 60%;}
+      }
+    }
+    .tages-highlights {max-height: 450px;overflow: auto;margin-bottom: 40px;}
+    .tages-programm, .text-box-live {max-height: 100%!important;}
+    .header_sp2 {
+      li {width: 24.1%;margin: 0 0.45%;}
+    }
+    .full-width {
+      .content_container {padding: 10px;}
+    }
+    section.select-wrapper { width: 100%; padding: 0 10px;
+      &.filter-sportart {text-align: left;}
+    }
+  }
+}
+
+@media only screen and (max-width:639px) {
+  .olympia {
+    .header_sp2 {
+      ul {width: 87%;}
+      li {width: 32.3%;margin: 0 0.5%;}
+    }
+    .content_container {
+      .text-box-ergebnisse .ergebnisse table tbody {width: 100%;display: inline-table;}
+    }
+  }
+}
+
+@media only screen and (max-width:530px) {
+  .olympia {
+    .header_sp2 {
+      ul {width: 80%;}
+      li {width: 48%;margin: 0 1%;}
+    }
+  }
+}
+
+@media only screen and (max-width:500px) {
+  .olympia {
+    .sort {padding-right: 10px;
+      span { left:0;}
+    }
+    .content_container {
+      .text-box-programm .programm { padding: 10px 10px;
+        div {
+          &.zeit {width: 50%; text-align: left; font-size:17px;}
+          &.sportart {width: 50%;}
+          &.text {width: 100%; padding-left:0; font-size:15px;
+            span.heimspieler {float: none!important;margin-left: 0!important;display: block; padding:5px 0;}
+          }
+        }
+      }
+      .text-box-medaillenspiegel { 
+        table {
+          thead th { font-size: 15px; padding: 10px 4px;
+            &.flagge {padding-left: 5px;}
+          }
+          tbody tr {
+            td { font-size:15px;}
+            td.flagge {padding-left: 7px; position:relative;
+              img {width: 25px;}
+              a.tooltip {cursor: default;position: absolute;width: 25px;height: 100%;display: block;top: -10px;
+                &:before {position: absolute;z-index: 999;visibility: hidden;width: 0;height: 0;left: 50%;bottom: 0;opacity: 0;content: "";border-style: solid;border-width: 6px 6px 0 6px;border-color: rgba(0, 0, 0, 0.85) transparent transparent transparent;}
+                &:after {display: block;visibility: hidden;position: absolute;bottom: 0;opacity: 0;content: attr(data-tool);height: auto;min-width: 110px;padding: 5px 8px;z-index: 999;color: #fff;text-decoration: none;text-align: center;background: rgba(0, 0, 0, 0.85);font-size: 14px;text-transform: uppercase;}
+                &:hover:before {visibility: visible;opacity: 1;bottom: 30px;margin-left: -7px;}
+                &:hover:after {visibility: visible;opacity: 1;bottom: 36px;width: 110px;margin-left: -9px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+              }
+            } 
+            &.spieler-details td.flagge img {width: 20px;}
+          }
+          &.table-nationen, &.table-spieler {
+            thead tr th:nth-child(1) { display: none;}
+            thead tr th:nth-child(2) { padding-left:5px}
+            tbody tr td:nth-child(2) { display: none;}
+            tbody tr.spieler-details td:nth-child(2) { display: inline-table; max-width: 100px;}
+             tbody tr.spieler-details td:nth-child(1) { display: none;}
+          }
+        } 
+      }
+    }
+    section.select-wrapper { width: 100%;
+      &.filter-sportart {text-align: left;}
+      .custom-select { width: 100%;
+        select { display: block; margin-left: 0; width: 100%;}
+        &:after { top: auto;}
+      }
+    }
+    .ortszeit-wahl, .aut-wahl, .medaillen-wahl {     
+      .onoffswitch  { float: right;padding-right: 10px;
+        .onoffswitch-switch {right: 131px}
+      }
+      .onoffswitch2 { float: right;padding-right: 10px;
+        .onoffswitch-switch2 {right: 43px}
+      }
+      .onoffswitch3 { float: right;padding-right: 10px;
+        .onoffswitch-switch3 {right: 43px}
+      }
+    }
+  }
+}
+
+@media only screen and (max-width:355px) {
+  .olympia {
+    .header_sp_spielbutton2 { font-size:13px;}
+    .paging-container { padding: 0 10px;
+      .boxarrow { font-size: 14px;
+        &.left span {padding-right: 6px;}
+        &.right span {padding-left: 5px;}
+      }
+    }
+    .content_container {
+      .text-box-programm .programm {
+        div {
+          &.text span {
+            &.bewerb { width: 100%!important; }
+            &.phase { width: 100%!important; }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width:320px) {
+  .olympia {
+    .header_sp2 {
+      ul {width: 75%;}
+    }
+    .content_container {
+      .text-box-ergebnisse .ergebnisse {
+        table tbody {
+           tr td {
+             &.spieler { max-width:120px;}
+             &.platzierung span.medaille {
+               &.gold, &.silber, &.bronze {width: 20px;height: 20px;}
+             }
+             &.nation img {width: 20px;}
+           }
+        }
+      }
+    }
+  }
+}
+
+
+// KRONE WIDGET
+
+body.olympia-krone {
+  
+  #tickerbox {margin: 0;padding: 0;color: #000;width: 290px;height: 395px;}
+  .spielauswahl_spielbox { width:100%!important; position: relative; margin: 0; max-width:290px;min-width:290px; height:125px;display:block; margin-bottom:10px;}
+  .spielbox_oben { padding: 0 15px; padding-top: 5px; box-sizing: border-box; height: 100%;padding-bottom: 28px; border:none;
+    .sportart {display: inline-block;float: left; width: 20%;box-sizing: border-box;}
+    .sportart-text { display: inline-block;float: left;padding-left: 15px;width: 80%;box-sizing: border-box;padding-top: 15px;font-weight: bold; font-size:15px;}
+    .bewerb { float: left;display: inline-block;clear: both; font-size:14px;}
+  }
+  .spielbox_unten { position: absolute;width: 100%;bottom: 0;
+    span {padding: 0 10px;}
+    p { font-size: 15px;line-height: 26px;}
+  }
+  
+  .sprite-actions-mini {background-image: url('../../static/img/sprite-icons-mini.png'); display:inline-block;width: 30px;height: 30px; vertical-align: middle;
+    &.ceremony {background-position: 0px 0px;}
+    &.bogenschiessen {background-position: 0px -40px;}
+    &.turnen {background-position: 0px -80px;}
+    &.leichtathletik {background-position: 0px -120px;}
+    &.badminton {background-position: 0px -160px;}
+    &.basketball {background-position: -0px -200px;}
+    &.beachvolleyball {background-position: -0px -900px;}
+    &.boxen {background-position: -50px 0px;}
+    &.kanu {background-position: -50px -40px;}
+    &.radsport {background-position: -50px -80px;}
+    &.schwimmen {background-position: -50px -120px;}
+    &.pferdesport {background-position: -50px -160px;}
+    &.fechten {background-position: -50px -200px;}
+    &.fussball {background-position: -50px -240px;}
+    &.golf {background-position: 0px -280px;}
+    &.handball {background-position: 0px -320px;}
+    &.hockey {background-position: 0px -360px;}
+    &.judo {background-position: 0px -400px;}
+    &.modernerfuenfkampf {background-position: 0px -440px;}
+    &.rudern {background-position: 0px -480px;}
+    &.rugby {background-position: 0px -520px;}
+    &.segeln {background-position: -50px -280px;}
+    &.schiessen {background-position: -50px -320px;}
+    &.tischtennis {background-position: -50px -360px;}
+    &.taekwondo {background-position: -50px -400px;}
+    &.tennis {background-position: -50px -440px;}
+    &.triathlon {background-position: -50px -480px;}
+    &.volleyball {background-position: -50px -520px;}
+    &.wasserball {background-position: 0px -570px;}
+    &.gewichtheben {background-position: -50px -560px;}
+    &.ringen {background-position: 0px -600px;}
+    &.turmspringen {background-position: -50px -600px;}    
+  }
+  
+  .sprite-actions-small {background-image: url('../../static/img/sprite-icons-small.png'); display:inline-block;width: 50px;height: 50px;
+    &.ceremony {background-position: 0px 0px;}
+    &.bogenschiessen {background-position: 0px -80px;}
+    &.turnen {background-position: 0px -150px;}
+    &.leichtathletik {background-position: 0px -225px;}
+    &.badminton {background-position: 0px -300px;}
+    &.basketball {background-position: -0px -375px;}
+    &.beachvolleyball {background-position: -0px -450px;}
+    &.boxen {background-position: -75px 0px;}
+    &.kanu {background-position: -75px -80px;}
+    &.radsport {background-position: -75px -150px;}
+    &.schwimmen {background-position: -75px -225px;}
+    &.pferdesport {background-position: -75px -300px;}
+    &.fechten {background-position: -75px -375px;}
+    &.fussball {background-position: -75px -450px;}
+    &.golf {background-position: -150px -0px;}
+    &.handball {background-position: -150px -80px;}
+    &.hockey {background-position: -150px -150px;}
+    &.judo {background-position: -150px -225px;}
+    &.modernerfuenfkampf {background-position: -150px -300px;}
+    &.rudern {background-position: -150px -375px;}
+    &.rugby {background-position: -150px -450px;}
+    &.segeln {background-position: -225px 0px;}
+    &.schiessen {background-position: -225px -80px;}
+    &.tischtennis {background-position: -225px -150px;}
+    &.taekwondo {background-position: -225px -2250px;}
+    &.tennis {background-position: -225px -300px;}
+    &.triathlon {background-position: -225px -375px;}
+    &.volleyball {background-position: -225px -450px;}
+    &.wasserball {background-position: -300px 0px;}
+    &.gewichtheben {background-position: -300px -80px;}
+    &.ringen {background-position: -300px -150px;}
+    &.turmspringen {background-position: -300px -225px;}    
+  }
+}    
