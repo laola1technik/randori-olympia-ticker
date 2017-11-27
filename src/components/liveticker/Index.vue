@@ -6,68 +6,19 @@
                 <section class="select-wrapper filter-sportart single-filter">
                     <label class="custom-select">
                         Filtern nach Sportart:
-                        <select class="sportsTypeFilter">
-                            <option selected="selected" value="0">Alle Sportarten</option>
-                            <option value="1">Badminton</option>
-                            <option value="2">Baseball</option>
-                        </select>
+                        <sports-types-filter
+                            :options="sportsTypes"
+                            v-model="selectedSportsType">
+                        </sports-types-filter>
                     </label>
                 </section>
             </div>
             <div class="content_container">
-                <div class="text-box-highlights">
-                    <div class="left">
-                        <div class="sportart">
-                        </div>
-                        <div class="zeit">
-                            <span>20:46 Uhr</span>
-                        </div>
-                    </div>
-                    <div class="right">
-                        <div class="text">
-                            <p class="title">Das waren die Olympischen Spiele in Rio</p>
-                                    <span>
-                                        Das US-Basketball-Team setzt den Schlusspunkt bei den Spielen 2016! Spannende 16 Wettkampf-Tage liegen hinter uns - 306 Mal ging es um Gold, Silber und Bronze. Aber auch abseits der Medaillen gab es schöne Momente im Zeichen der fünf Ringe. Wir hoffen, ihr hatte Spaß mit unserem Live-Ticker.
-                                    </span>
-                        </div>
-                    </div>
-                    <div class=""></div>
-                </div>
-
-                <div class="text-box-highlights">
-                    <div class="left">
-                        <div class="sportart">
-                            <span class="sprite-actions-small basketball"></span>
-                        </div>
-                        <div class="zeit">
-                            <span>20:43 Uhr</span>
-                        </div>
-                    </div>
-                    <div class="right">
-                        <div class="text">
-                            <p class="title">Basketball - Finale Herren</p>
-                                    <span>
-                                        Die letzte Entscheidung bei diesen Spielen fällt im Basketball. Im Finale der Herren stehen sich die USA und Serbien gegenüber.
-                                    </span>
-                        </div>
-                    </div>
-                    <div class="medaille gold"></div>
-                </div>
-
-                <div class="text-box-highlights placeholder">
-                    <div class="left">
-                        <div class="sportart"></div>
-                        <div class="zeit"><span></span></div>
-                    </div>
-                    <div class="">
-                        <div class="text">
-                            <p class="title"></p>
-                            <span>Es wurden keine passenden Einträge gefunden</span>
-                        </div>
-                    </div>
-                    <div class=""></div>
-                </div>
-                <!--- text-box-highlights ende -->
+                <message-entry
+                        v-for="message in filteredMessages"
+                        :message="message"
+                        :key="message.id">
+                </message-entry>
             </div>
         </div>
 
@@ -83,5 +34,73 @@
 </template>
 
 <script>
-    export default {}
+    import MessageEntry from './Message.vue';
+    import SportsTypesFilter from './SportsTypesFilter.vue';
+
+    import Loader from '@/Loader';
+    import Parser from '@/Parser';
+
+    let loader = new Loader();
+    let parser = new Parser();
+
+    let intervalId = null;
+
+    export default {
+        name: 'LiveTicker',
+        components: {
+            MessageEntry,
+            SportsTypesFilter
+        },
+        data() {
+            return {
+                url: '/feeds/messages.json',
+                messages: [],
+                selectedSportsType: ""
+            };
+        },
+        created() {
+            this.refreshTicker();
+            intervalId = setInterval(this.refreshTicker, 10 * 1000);
+
+        },
+        destroyed() {
+            clearInterval(intervalId);
+        },
+        methods: {
+            refreshTicker() {
+                loader.load(this.url)
+                        .then(json => {
+                    //debugger
+                    this.messages = parser.parse(json);
+            });
+            }
+        },
+        computed: {
+            sportsTypes() {
+                if(!this.messages.length) {
+                    return [];
+                }
+
+                let map = new Map();
+                this.messages.map(message => {
+                    if(message.sportsTypeId && !map.has(message.sportsTypeId)) {
+                        map.set(parseInt(message.sportsTypeId), message.sportsType);
+                    }
+
+                });
+
+                return Array.from(map);
+            },
+            filteredMessages() {
+                if(this.selectedSportsType === '') {
+                    return this.messages;
+                }
+
+                return this.messages
+                    .filter(message => {
+                        return message.sportsTypeId == this.selectedSportsType;
+                    })
+            }
+        }
+    }
 </script>
